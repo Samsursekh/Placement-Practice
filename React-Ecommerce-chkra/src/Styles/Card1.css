@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    /* row-gap: 2rem;
+      column-gap: 3rem; */
+    gap: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
