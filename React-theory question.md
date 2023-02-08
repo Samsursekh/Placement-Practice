@@ -27,7 +27,11 @@ The high pace of development
 Problems with SEO
 JSX as a barrier
 
-6] ) State the difference between Real DOM and Virtual DOM
+6) What is DOM?
+
+DOM stands for Document Object Model it is the structural representation of all nodes in an HTML document DOM represents the Ul of your applications.  DOM manipulation is required to dynamically change the content of a web page. 
+
+7) State the difference between Real DOM and Virtual DOM
 
 # Real Dom
  
@@ -35,9 +39,12 @@ JSX as a barrier
 
 
 - It can directly update HTML
-- Creates a new DOM if the element updates.
-
-
+- Creates a new DOM if the element     updates.
+- DOM manipulation is very expensive 
+- There is too much memory wastage 
+- It updates Slow
+- It represents the Ul of your application
+- It allows us to directly target any  specific node (HTML element)
 
 
 # Virtual Dom
@@ -46,11 +53,22 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 
 - It can't update HTML directly
 - Update the JSX if the element update
+- DOM manipulation is very easy 
+- No memory wastage 
+- It updates fast
+- It is only a virtual representation of the DOM
+- It can produce about 200,000 Virtual DOM Nodes / Second.
 
-# This Virtual DOM works in three simple steps-
+ # This Virtual DOM works in three simple steps-
  i. Whenever any underlying data changes, the entire Ul is
     re-rendered in Virtual DOM representation
  ii. Then the difference between the previous DOM representation 
       and the new one is calculated
  iii. Once the calculations are done, the real DOM will be updated with only 
-       the things that have actually changed
+     the things that have actually changed
+
+8) What is Flux Concept In React?
+
+Facebook widely uses flux architecture concept for developing client-side web
+applications. It is not a framework or a library. It is simply a new kind of architecture
+that complements React and the concept of Unidirectional Data Flow.
