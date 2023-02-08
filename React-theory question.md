@@ -68,6 +68,76 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 
 #  What is Flux Concept In React?
 
-Facebook widely uses flux architecture concept for developing client-side web
+- Facebook widely uses flux architecture concept for developing client-side web
 applications. It is not a framework or a library. It is simply a new kind of architecture
 that complements React and the concept of Unidirectional Data Flow.
+
+- Flux is a programming concept, where the data is uni-directional.
+- This data enters the app and flows through it in one direction until it is rendered on the screen.
+
+# flow of flux 
+- Actions − Actions are sent to the dispatcher to trigger the data flow.
+
+- Dispatcher − This is a central hub of the app. All the data is dispatched and sent to the stores.
+
+- Store − Store is the place where the application state and logic are held. Every store is maintaining a particular state and it will update when needed.
+
+- View − The view will receive data from the store and re-render the app.
+
+#  Define the term Redux in React
+
+- Redux is an open-source JavaScript library used to manage application state.
+- You can test and run an application developed with Redux in different environments. 
+
+#  What is the 'Store' feature in Redux?
+
+- Redux has a feature called 'Store' which allows you to save the application's entire State
+at one place. Therefore all it's component's State are stored in the Store so that you will
+get regular updates directly from the Store. The single state tree helps you to keep track
+of changes over time and debug or inspect the application.
+
+
+# What is an action in Redux? 
+
+- It is a function which returns an action object. The action-type and the action data are
+always stored in the action object. Actions can send data between the Store and the
+software application. All information retrieved by the Store is produced by the actions.
+
+- An action creator is a function that literally creates an action object. 
+- In Redux, action creators simply return an action object and pass the argument value if necessary.
+
+#  Name the important features of React
+
+- Allows you to use 3rd party libraries
+- Time-Saving
+- Faster Development
+- Simplicity and Composable
+- Fully supported by Facebook.
+- Code Stability with One-directional data binding
+- React Components
+
+# Explain the term stateless components
+
+- Stateless components are pure functions that render DOM-based solely on the properties provided to them.
+- A stateless function component is a typical React component that is defined as a function that does not manage any state.
+
+# Explain React Router
+
+React Router is a routing library which allows you to add new screen flows to your application, and it also keeps URL in sync with what’s being shown on the page.
+
+# What is dispatcher?
+
+A dispatcher is a central hub of app where you will receive actions and broadcast payload to registered callbacks.
+
+# What is meant by callback function? What is its purpose?
+
+- A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+- A callback function should be called when setState has finished, and the component is retendered. As the setState is asynchronous, which is why it takes in a second callback function.
+
+
+
+
+
+
+
