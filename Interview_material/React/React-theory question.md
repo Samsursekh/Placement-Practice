@@ -136,6 +136,43 @@ A dispatcher is a central hub of app where you will receive actions and broadcas
 - A callback function should be called when setState has finished, and the component is retendered. As the setState is asynchronous, which is why it takes in a second callback function.
 
 
+#   1]  CONCEPT EXPLAINER ASSIGNMENT REACT LIFECYCLE METHOD
+
+- Each React component has a lifecycle that you can monitor and manipulate during its three main phases.	
+The three phases are Mounting, Updating, and Unmounting.
+
+- 1] Mounting 
+- 2] Updating 
+- 3] Unmounting 
+
+# Mounting
+- Mounting means putting elements into the DOM.
+- React has four built-in methods that get called, in this order, when mounting a  component:
+
+- constructor
+- getDerivedStateFromProps()
+- render() 
+- componentDidMount()
+
+# Updating
+- A component is updated whenever there is a change in the component's state or props.
+- React has five built-in methods that get called, in this order, when a component is updated:
+
+- getDerivedStateFromProps()
+- shouldComponentUpdate()
+- render()
+- getSnapshotBeforeUpdate()
+- componentDidUpdate()
+
+
+# Unmounting
+- The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
+- React has only one built-in method that gets called when a component is unmounted:
+
+- componentWillUnmount()
+- The componentWillUnmount method is called when the component is about to be removed from the DOM.
+
+
 
 
 
