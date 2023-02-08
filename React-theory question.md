@@ -10,22 +10,22 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 
 # Advantages of React.JS
 
-Reusable Components
-Easy Creation of the Dynamic Web Applications
-The Support of Handy Tools
-Easy to understand and easy to use
-SEO Friendly
-Having JavaScript Library
-The Benefit of Having JavaScript Library
-Scope for Testing the Codes
+- Reusable Components
+- Easy Creation of the Dynamic Web Applications
+- The Support of Handy Tools
+- Easy to understand and easy to use
+- SEO Friendly
+- Having JavaScript Library
+- The Benefit of Having JavaScript Library
+- Scope for Testing the Codes
 
 # Disadvantages of react.js
 
-Poor Documentation
-View Part
-The high pace of development
-Problems with SEO
-JSX as a barrier
+- Poor Documentation
+- View Part
+- The high pace of development
+- Problems with SEO
+- JSX as a barrier
 
 # What is DOM?
 
