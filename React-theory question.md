@@ -1,14 +1,14 @@
-1) What is Reactjs?
+# hat is Reactjs?
 React is a JavaScript library that makes building user interfaces easy. It was developed by Facebook.
 
-2) Does React use HTML? 
+# Does React use HTML? 
 No, It uses JSX, which is similar to HTML.
 
-3) what is JSX?
+# what is JSX?
 JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
 
 
-4] Advantages of ReactJS
+# Advantages of React.JS
 
 Reusable Components
 Easy Creation of the Dynamic Web Applications
@@ -19,7 +19,7 @@ Having JavaScript Library
 The Benefit of Having JavaScript Library
 Scope for Testing the Codes
 
-5] Disadvantages
+# Disadvantages of react.js
 
 Poor Documentation
 View Part
@@ -27,19 +27,18 @@ The high pace of development
 Problems with SEO
 JSX as a barrier
 
-6) What is DOM?
+# What is DOM?
 
 DOM stands for Document Object Model it is the structural representation of all nodes in an HTML document DOM represents the Ul of your applications.  DOM manipulation is required to dynamically change the content of a web page. 
 
-7) State the difference between Real DOM and Virtual DOM
+# State the difference between Real DOM and Virtual DOM
 
 # Real Dom
  
  It is a structural representation of HTML elements of a web application
 
-
 - It can directly update HTML
-- Creates a new DOM if the element     updates.
+- Creates a new DOM if the element updates.
 - DOM manipulation is very expensive 
 - There is too much memory wastage 
 - It updates Slow
@@ -60,14 +59,14 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 - It can produce about 200,000 Virtual DOM Nodes / Second.
 
  # This Virtual DOM works in three simple steps-
- i. Whenever any underlying data changes, the entire Ul is
+ - i. Whenever any underlying data changes, the entire Ul is
     re-rendered in Virtual DOM representation
- ii. Then the difference between the previous DOM representation 
+ - ii. Then the difference between the previous DOM representation 
       and the new one is calculated
- iii. Once the calculations are done, the real DOM will be updated with only 
+ - iii. Once the calculations are done, the real DOM will be updated with only 
      the things that have actually changed
 
-8) What is Flux Concept In React?
+#  What is Flux Concept In React?
 
 Facebook widely uses flux architecture concept for developing client-side web
 applications. It is not a framework or a library. It is simply a new kind of architecture
