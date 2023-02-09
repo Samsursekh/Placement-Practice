@@ -9,13 +9,13 @@
 
 table--> rows
 collection -->
-array.onject ==> key-value pair ==> document 
+array.object ==> key-value pair ==> document 
 
 ### database related coomands ==>
 
 1] mongosh  ==>start monogsh
 
-2] show dbs  ==> apke sare database jo apne    banaye hai oh show karenge 
+2] show dbs  ==> apke sare database jo apne banaye hai oh show karenge 
 
 3] use comments ==> create a new database name comments
 
