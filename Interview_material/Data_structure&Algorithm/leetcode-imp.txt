@@ -1,0 +1,321 @@
+1] search 2D matrix
+
+var searchMatrix = function(matrix, target) {
+    for(let ele of matrix){
+        if(ele[0]<=target&&ele[ele.length-1]>=target){
+            for(let i=0;i<ele.length;i++){
+                if(ele[i]==target){
+                    return true
+                }
+            }
+        }
+    }
+    return false
+};
+
+//***************************************************************************************************//
+
+var searchMatrix = function(matrix, target) {
+let arr=[]
+let obj={}
+   for(let i=0;i<matrix.length;i++){
+       arr.push(...matrix[i])
+   }
+   for(let k of arr){
+       !obj[k]?obj[k]=1:obj[k]++
+   }
+   if(obj[target]){
+       return true
+   }
+   return false
+}
+
+//*******************************************************************************************************//
+
+var searchMatrix = function(matrix, target) {
+for(let i=0;i<matrix.length;i++){
+       let res=check(matrix[i])
+       if(res){
+           return true
+       }
+   }
+   return false
+   function check(arr){
+       let l=0;
+       r=arr.length-1;
+       if(arr[0]==target)return true
+       while(l<=r){
+           let mid=Math.floor((l+r)/2);
+           if(arr[mid]===target) return true;
+           else if(arr[mid]<target) l=mid+1;
+           else r=mid-1;
+       }
+       return false
+   }
+ }
+};
+
+
+//*********************************************************************************************//
+
+2] plusone
+
+let plusOne = function(digits) {
+    for(let i=digits.length-1;i>=0;i--){
+        digits[i]++;
+        if(digits[i]>9){
+            digits[i]=0;
+        }
+        else{
+            return digits;
+        }
+    }
+    digits.unshift(1);
+    return digits;
+};
+
+//*********************************************************************************************//
+
+3] valid parantesis
+
+var isValid = function(s) {
+    // Initialize stack to store the closing brackets expected...
+    let stack = [];
+    // Traverse each charater in input string...
+    for (let p = 0; p < s.length; p++) {
+        // If open parentheses are present, push it to stack...
+        if (s[p] == '{') {
+            stack.push('}');
+        } else if (s[p] == '[') {
+            stack.push(']');
+        } else if (s[p] == '(') {
+            stack.push(')');
+        }
+        // If a close bracket is found, check that it matches the last stored open bracket
+        else if (stack.pop() !== s[p]) {
+            return false;
+        }
+    }
+    return !stack.length;
+};
+
+//*********************************************************************************************//
+
+
+4] Check Distances between same letters
+
+class Solution {
+ public:
+  bool checkDistances(string s, vector<int>& distance) {
+    vector<int> firstSeenIndex(26, -1);
+
+    for (int i = 0; i < s.length(); ++i) {
+      const int j = s[i] - 'a';
+      int& prevIndex = firstSeenIndex[j];
+      if (prevIndex != -1 && i - prevIndex - 1 != distance[j])
+        return false;
+      prevIndex = i;
+    }
+
+    return true;
+  }
+};
+
+//*********************************************************************************************//
+
+5] Odd String Difference
+
+
+
+
+//*********************************************************************************************//
+
+6] Number of Good Pairs 
+
+approch-1 ==> O(N^2)
+var numIdenticalPairs = function(nums) {
+    var min = 0;
+    var count = 0;
+    for (var i = 1; i < nums.length; i++) {
+        if(nums[min] === nums[i]) {
+            count++;
+            if (i === nums.length-1) {
+                min++;
+                i = min;
+            }
+        }else if(i === nums.length-1) {
+                min++;
+                i = min;   
+        }
+    }
+    return count;
+};
+
+//*********************************************************************************************//
+
+approch-2 ==>0(N)
+var numIdenticalPairs = function(nums) {
+    var obj = {}
+    var count = 0
+    for (var n of nums) {
+        if (obj[n]) {
+            count  += obj[n];
+            obj[n] += 1;
+        } else {
+            obj[n] = 1;
+        }
+    }
+    return count
+};
+
+
+
+//*********************************************************************************************//
+
+7] Longest Substring Without Repeating Characters
+
+function lengthOfLongestSubstring(s) {
+    if(s.length < 2) {
+        return s.length;
+    }
+    
+    let longestLength = 1;
+    let currentStr =  '';
+    
+    for(let i=0 ; i < s.length ; i++){
+        if(currentStr.includes(s.charAt(i))){
+           let firstSeen = currentStr.indexOf(s.charAt(i));
+            currentStr = currentStr.substring(firstSeen+1,currentStr.length);   
+
+        }
+          currentStr += s.charAt(i);
+          longestLength = Math.max(currentStr.length,longestLength);
+    }
+     
+    return longestLength;
+};
+
+
+//*********************************************************************************************//
+
+
+var lengthOfLongestSubstring = function(s) {
+
+let substring = [];
+let maxCount = 0;
+for (let i = 0; i < s.length; i++) {
+    maxCount = Math.max(substring.length, maxCount);
+    substring.splice(0, substring.indexOf(s[i]) + 1);
+    substring.push(s[i]);
+}
+maxCount = Math.max(substring.length, maxCount);
+return maxCount;
+
+};
+
+//************************************************************************************************************//
+
+8] valid anagram
+
+var isAnagram = function(s, t) {
+ s=s.split("").sort().join("")
+ t=t.split("").sort().join("")
+ 
+ return s==t
+}
+
+//**************************************************************************//
+
+Time complexity : O(n).
+Space complexity : O(n).
+
+var isAnagram = function(s, t) {
+  var lenA = s.length;
+  var lenB = t.length;
+  var map = {};
+
+  if (lenA !== lenB) return false;
+
+  for (var i = 0; i < lenA; i++) {
+    if (!map[s[i]]) map[s[i]] = 0;
+    map[s[i]]++;
+  }
+
+  for (var j = 0; j < lenB; j++) {
+    if (!map[t[j]]) return false;
+    map[t[j]]--;
+  }
+
+  return true;
+};
+
+10] Search Insert Position
+
+var searchInsert = function(nums, target) {
+       for(let p=0; p<nums.length; p++){
+           if(nums[p]>=target){
+               return p;
+           }
+       }
+       return nums.length
+};
+
+# SELECTION SORT ==>
+var swap;
+function solve(N,arr){
+    
+    for(let p=0; p<N; p++){
+        let min=p;
+        for(let q=p+1; q<N; q++){
+            if(arr[q]<arr[min]){
+                min=q;
+            }
+        }swap(arr, min, p)
+        
+    }
+    
+    function swap(arr, p, q){
+        temp = arr[p];
+        arr[p]= arr[q];
+        arr[q]= temp;
+    }
+    console.log(arr.join(" "));
+}
+
+# BUBBLE SORT ==>
+
+function solve(N,arr){
+   
+for(let p=0; p<N; p++){
+    
+    for(let q=0; q<N; q++){
+        if(arr[q]>arr[q+1]){
+            temp = arr[q]
+            arr[q]=arr[q+1]
+            arr[q+1]=arr[p];
+            arr[p]=temp
+        }
+    }
+}
+console.log(arr.join(" "));
+}
+
+# QUICK SORT ==> 
+
+function quickShort(N,arr){
+    for(let p=0; p<N-1; p++){
+       for(let q=p+1; q<N; q++){
+            if(arr[q]<arr[p]){
+               swap(arr,p,q);
+                }
+            }
+        }
+console.log(arr.join(" "));
+};
+function swap(arr,x,y){
+let temp = arr[x];
+arr[x] = arr[y];
+arr[y] = temp;
+return arr;
+};
+
