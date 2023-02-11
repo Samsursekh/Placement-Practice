@@ -73,3 +73,18 @@
 // })
 // console.log(str)
 
+// const funct2 = () => {
+//     setTimeout(() => {
+//         console.log("func2 is starting")
+//     }, 3000);
+// }
+
+// const func1 = () => {
+//     console.log('func1 is starting')
+//     funct2();
+//     console.log("func1 is ending");
+// }
+
+// func1();
+
+

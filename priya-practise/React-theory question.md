@@ -145,16 +145,16 @@ The three phases are Mounting, Updating, and Unmounting.
 - 2] Updating 
 - 3] Unmounting 
 
-# Mounting
+# Mounting/birth
 - Mounting means putting elements into the DOM.
-- React has four built-in methods that get called, in this order, when mounting a  component:
 
+- React has four built-in methods that get called, in this order, when mounting a  component:
 - constructor
 - getDerivedStateFromProps()
 - render() 
 - componentDidMount()
 
-# Updating
+# Updating/middle
 - A component is updated whenever there is a change in the component's state or props.
 - React has five built-in methods that get called, in this order, when a component is updated:
 
@@ -165,7 +165,7 @@ The three phases are Mounting, Updating, and Unmounting.
 - componentDidUpdate()
 
 
-# Unmounting
+# Unmounting/end 
 - The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
 - React has only one built-in method that gets called when a component is unmounted:
 

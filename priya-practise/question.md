@@ -11,10 +11,24 @@ function outer(){
 }
 console.log(outer);
 
-- usues 
-- 1) object data privacy
-- 2) event handlers and callback functions, and in partial applications, 
-- 3)currying, and other functional programming patterns.
+
+
+# Advantages of Closure:
+
+- Module Design Pattern
+- Currying
+- Memoize
+- Data hiding and encapsulation
+- setTimeouts etc.
+- event handlers and callback  - - functions, and in partial 
+
+# Disadvantages of Closure:
+
+- Over consumption of memory
+- Memory Leak
+- Freeze browser
+
+
 
 # what is higher-order-funtion ?
 
