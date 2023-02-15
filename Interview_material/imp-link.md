@@ -20,6 +20,8 @@ PREPARATION =>
 ---------------------
 fincart : https://vivmagarwal.notion.site/Placement-Operations-13c6ac2c9cf74f5dab2ff783cc52e4fb
 
+BlitzScale : https://docs.google.com/document/d/1_mkoG0sP8aEEVO5dBNBqJQf5uhaNNaFNGFUViAf39nQ/edit
+
 advance javascript master class (ooops)  ==>
 ------------------------------------------------------
 
