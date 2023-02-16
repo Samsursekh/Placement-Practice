@@ -7,6 +7,8 @@ React-redux : https://drive.google.com/drive/folders/1_v9yseCjQtz8Csslc7t4xJTV5h
 
 React theory  :  https://www.javatpoint.com/react-flux-vs-mvc#:~:text=MVC%20stands%20for%20Model%20View,in%20the%20Smalltalk%20programming%20language.
 
+React official doc : https://beta.reactjs.org/
+
 JAVA- core-JAVA : https://drive.google.com/drive/folders/13Jl5WWR43z-8FDddG3FmzWgzoA7nhMc3?usp=share_link
 
 spring-boot : https://drive.google.com/drive/folders/1S_WWvsgbr38Ycss2j-k_KvZ9CmMj61vD?usp=share_link
