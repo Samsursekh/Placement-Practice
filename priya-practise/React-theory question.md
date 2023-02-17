@@ -43,7 +43,7 @@ DOM stands for Document Object Model it is the structural representation of all 
 - There is too much memory wastage 
 - It updates Slow
 - It represents the Ul of your application
-- It allows us to directly target any  specific node (HTML element)
+
 
 
 # Virtual Dom
@@ -56,7 +56,7 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 - No memory wastage 
 - It updates fast
 - It is only a virtual representation of the DOM
-- It can produce about 200,000 Virtual DOM Nodes / Second.
+
 
  # This Virtual DOM works in three simple steps-
  - i. Whenever any underlying data changes, the entire Ul is

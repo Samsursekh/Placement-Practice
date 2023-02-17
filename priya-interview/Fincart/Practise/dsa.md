@@ -141,3 +141,83 @@ return count;
 let arr = [undefined, null, NaN, 0, "", false, 1, true, "hello"]
 console.log(countTruthy(arr)) //3
 
+# 8] start printing pattern 
+
+let N = 5 // row or column count
+
+let bag="";
+for(p=N-1; p>=0; p--){
+    for(let q=p+1; q<N; q++){
+        bag=bag+"*"
+    }
+    bag=bag+"\n";
+}
+console.log(bag)
+
+# 9] avg of marks ==> 
+
+// Hint: calculate average
+// 0 - 49: C
+// 50 - 79: B
+// 80 - 100: A 
+
+function calculateGrade(marks) {
+ const sum = marks.reduce((accl, item) => {
+     accl=accl+item;
+     return accl;
+ })
+   
+   let avg = sum/marks.length ||0
+//   console.log(avg)
+   
+   if(avg <= 49){
+       return "C"
+   }else if(avg>=50 && avg<=79){
+       return "B"
+   } else if(avg>=80){
+       return "A";
+   }
+}
+
+
+console.log(calculateGrade([20, 30, 50])); // C
+console.log(calculateGrade([80, 80, 50])); // B
+console.log(calculateGrade([80, 80, 90])); // A
+
+
+# 10] prime numbers =>
+
+function printPrimes(num){
+  let arr =[];
+   for(let p=2; p<=num; p++){
+      let isPrime=true;
+      for(let q=2; q<p; q++){
+          if(p%q==0){
+              isPrime=false;
+              break;
+          }
+      }
+    //   console.log(p , isPrime)
+    if(isPrime){
+        arr.push(p);
+    }
+   }
+      return arr
+   }
+console.log(printPrimes(20));
+
+
+# missing number using without sort
+
+let input= [0,4,3,1]
+let N=input.length
+
+var total = N*(N+1)/2
+let sum=0;
+for(let p=0; p<input.length; p++){
+    sum=sum+input[p]
+}
+console.log(total-sum)  //2
+
+<!-- Time Complexity: O(N) where N is the size of the array.
+Space Complexity: O(1) because no extra space is needed. -->

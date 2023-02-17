@@ -24,11 +24,12 @@ function Card() {
             {
                 data.map((e)=> {
                   return  <div id="box" key={e.id}>
-                <img src={e.images} alt=""/>
+                {/* <img src={e.images} alt="images"/> */}
                 <h3>{e.id}</h3>
                 <h3>{e.title}</h3>
                 <h4>{e.price}</h4>
                 <p>{e.description}</p>
+                <p>{e.category.name}</p>
                 <button>ADD TO CART</button>
                 <button>DELETE</button>
                     
