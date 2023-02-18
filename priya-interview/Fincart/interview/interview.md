@@ -45,7 +45,9 @@ sp => O(n)
 10] advantage of virtual dom 
 11] what is difference for and forEach loop 
 12] what is datatype ? how many datatype present in javascript ?
-13] difference between float and doubble 
+13] difference between float and doubble
+14] Find the Vowels  and Consonent
+15] what is component in react? difference between functional component and class component?
 
 # 15] what is component in react? difference between functional component and class component?
 - A component is an independent, reusable bit of code which divides the UI into smaller pieces

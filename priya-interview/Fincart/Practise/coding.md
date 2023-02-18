@@ -263,7 +263,8 @@ export default Child;
  - Some examples of side effects are: fetching data, directly updating the DOM, and timers.
 
  # What is useRef () hook?
- - useRef is one of the many built-in hooks provided by React. It is useful for persisting mutable data between component renders. There are a couple of specific uses cases for useRef and refs that I'd like to call out. Modifying a child DOM node outside of the typical React data flow.
+ - The useRef Hook allows you to persist values between renders. 
+ - It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
 
  # life cycles => 
  Every component in React goes through a lifecycle of events. I like to think of them as going through a cycle of birth, growth, and death.
