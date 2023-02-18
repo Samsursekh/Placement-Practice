@@ -17,6 +17,39 @@
 
 # 3] Counter using setTimeout react(start , pause, reset)
 
+# Approach 1 ==> 
+
+import {useEffect, useState, useRef} from "react"
+
+export default function App() {
+  const [time, setTime] = useState(0)
+
+  let id = useRef();
+
+function getTime(){
+  id.current = setInterval(() => {
+    setTime((prev) => prev+1)
+    console.log(time)
+  },1000)
+}
+
+useEffect(() => {
+  return() => clearInterval(id.current)
+ }, [])
+
+ 
+  return (
+    <div className="App">
+      <h1>Time : {time}</h1>
+    <button onClick={() => getTime()}>Start</button>
+    <button onClick={() => clearInterval(id.current) }>Pause</button>
+    <button onClick={() => {clearInterval(id.current); setTime(0)}}>Reset</button>
+    </div>
+  );
+}
+
+# approach 2 ==> 
+
 import "./styles.css";
 import { useEffect, useRef, useState } from "react";
 
@@ -59,6 +92,8 @@ export default function App() {
     </div>
   );
 }
+
+
 
 
 # 4] what is component in react? difference between functional component and class component?

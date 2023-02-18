@@ -1,8 +1,8 @@
-#Navbar{
-  /* border:2px solid red; */
+ /* #Navbar{
+
   display:flex;
   justify-content: space-around;
-  padding:10px;
+
   text-decoration: none;
   background-color: teal
 }
@@ -31,7 +31,6 @@
    text-align: center;
    padding:20px;
    border-radius: 20px;
-   /* border:2px solid black; */
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -64,7 +63,7 @@ background-color: rgb(169, 155, 155);
 }
 #footer{
   height:300px;
-  /* border:5px solid red; */
+
   padding:30px;
   text-align: center;
   color:white;
@@ -99,9 +98,10 @@ z-index: 3;
 max-width: 400px;
 width: 100%;
 height: 50px;
-}
-/* responsive part start header */
+} */
 
+/* responsive part start header */
+/* 
 @media only screen and (max-width: 1100px) {
 #Navbar{
  width:1150px;
@@ -163,4 +163,4 @@ button{
  background-color:rgb(54, 79, 126);
 }
 
-}
+}  */
