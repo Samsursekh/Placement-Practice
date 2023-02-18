@@ -1,3 +1,6 @@
+
+# Doc Link ==> https://vivmagarwal.notion.site/Placement-Operations-13c6ac2c9cf74f5dab2ff783cc52e4fb
+
 # Async ops =>
 - Async-Ops is a library for performing   a   asynchronous service calls in Redux applications. - Async-Ops is made for use with Redux-Sagas.
 - async is that function always returns a promise.
@@ -35,6 +38,15 @@
 
     </body>
     </html>
+
+    
+# 2. What are the key differences between HTML and HTML5?
+HTML5 has made several steps forward compared to its previous versions. Notable changes include:
+HTML5 supports video, graphics, and audio, whereas HTML only supports them through third-party extensions
+HTML5 is mobile-friendly, whereas HTML is not
+HTML5 is compatible with all major web browsers, whereas HTML is not
+HTML5 offers several options for local storage, whereas HTML only offers cookies
+HTML5 supports multi-threading, whereas HTML operates only in one thread
  
  # CSS ==>
 
@@ -179,6 +191,48 @@ It is entirely dependent on your use case whether you should use Vanilla JS or R
 
 - React, on the other hand, which allows us to use reusable components and keeps the UI in sync with the state, can undoubtedly solve this problem.
 
+
+
+# setTInterval  and claearInterval=>
+- The setTimeout() method executes a block of code after the specified time
+
+- The setInterval() method calls a function at specified intervals (in milliseconds).
+
+- setTimeout() calls a passed-in function once after a specified delay, while setInterval() invokes one continuously at a designated time. As JavaScript is a singly-threaded language, both methods allow your code to run asynchronously.
+
+function printingnum(from, to){
+   let curr = from;
+   let timer  = setInterval(() => {
+       console.log(curr);
+       curr++;
+       if(curr>to){
+           clearInterval(timer);
+       }
+   }, 1000)
+}
+printingnum(0, 5)
+
+function print(from, to){
+    let curr= from; 
+    setTimeout(go = () => {
+        console.log(curr);
+        curr++;
+        if(curr<=to){
+            setTimeout(go, 1000)
+        }
+    },1000)
+}
+print(0,5)
+
+# local storage 
+
+- localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date.
+- sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.
+
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+ wishlist.push(e)
+localStorage.setItem('wishlist', JSON.stringify(wishlist))
+
 #   context API
 - React Context is a way to manage state globally. - It can be used together with the useState Hook to share state between deeply nested components more easily 
 - It's is better way aviod a prop drilling in react.js 
@@ -198,10 +252,40 @@ const Child = () => {
 };
 export default Child;
 
+# hooks 
+- Hooks allow function components to have access to state and other React features.
+
+# What is useState () in React?
+- The React useState Hook allows us to track state in a function component. 
+
+# What is useEffect () hook?
+- The useEffect Hook allows you to perform side effects in your components.
+ - Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+ # What is useRef () hook?
+ - useRef is one of the many built-in hooks provided by React. It is useful for persisting mutable data between component renders. There are a couple of specific uses cases for useRef and refs that I'd like to call out. Modifying a child DOM node outside of the typical React data flow.
+
+ # life cycles => 
+ Every component in React goes through a lifecycle of events. I like to think of them as going through a cycle of birth, growth, and death.
+
+Mounting – Birth of your component
+Update – Growth of your component
+Unmount – Death of your component
+ 
+ -  1] The mounting phase is when a new component is created and inserted into the DOM 
+ - 2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when the state is updated. This phase can occur multiple times, which is kind of the point of React.
+ - 3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
+
+ // lifecycle method
+mounting = constructor->render->componentDidMount
+update = render->componentDidUpdate
+unmounting = componentWillUnmount
+
+# Prop drilling
+Prop drilling is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.
 
 #  redux
 #  data flow
 #  prop drilling
 #  hooks?
 #  life cycles
-
