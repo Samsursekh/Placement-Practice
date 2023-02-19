@@ -48,23 +48,4 @@ sp => O(n)
 13] difference between float and doubble
 14] Find the Vowels  and Consonent
 15] what is component in react? difference between functional component and class component?
-
-# 15] what is component in react? difference between functional component and class component?
-- A component is an independent, reusable bit of code which divides the UI into smaller pieces
-- Components are independent and reusable bits of code.
--  They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, 
-
-# functional component =>
-- simple function / pure function 
-- does not use this keyword
-- solution without using state 
-- stateless component 
-- mainly responsible for UI 
-- use functional component easy 
-
-# class component => 
-- more feature rich 
-- maintain their own private data 
-- Has complex UI logic 
-- Provide lifecycle hook 
-- stateful component 
+16] difference between local storage session storage  and cookies?

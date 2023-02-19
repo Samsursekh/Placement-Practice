@@ -1,23 +1,33 @@
-# hat is Reactjs?
-React is a JavaScript library that makes building user interfaces easy. It was developed by Facebook.
+# what is Reactjs?
+- React is a JavaScript library that makes building user interfaces easy. 
+- It was developed by Facebook.
+
 
 # Does React use HTML? 
 No, It uses JSX, which is similar to HTML.
+
 
 # what is JSX?
 JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
 
 
-# Advantages of React.JS
-
-- Reusable Components
+# Advantages of React.JS / Name the important features of React
 - Easy Creation of the Dynamic Web Applications
+- React uses virtual dom, which makes web application.
+- Performance faster
+- Reusable Components
+- unidireactional data flow
+- dedicated tools foe easy debugging/
 - The Support of Handy Tools
 - Easy to understand and easy to use
 - SEO Friendly
 - Having JavaScript Library
-- The Benefit of Having JavaScript Library
 - Scope for Testing the Codes
+- Allows you to use 3rd party libraries
+- Time-Saving
+- Faster Development
+- Simplicity and Composable
+- Fully supported by Facebook.
 
 # Disadvantages of react.js
 
@@ -27,9 +37,62 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - Problems with SEO
 - JSX as a barrier
 
+
+# optimization techniques in react js
+
+- Using Stateless Components and React.
+- Using Production Mode Flag in Webpack.
+- Implementing Dependency optimization.
+- Using React.
+- Avoiding Inline Function Definition in the Render Function.
+- Throttling and Debouncing Event Action in JavaScript
+- Avoid using Index as Key for map
+-  Avoiding Props in Initial States
+- Spreading props on DOM elements
+- CSS Animations Instead of JS Animations
+
+# what is component in react? 
+- A component is basically a piece of the user interface.
+- A component id basically piece of the code.
+
+
+# 4] what is component in react? difference between functional component and class component?
+- there are two types of components 
+- 1] Functional component / representional Component
+- 2] Class component
+- A component is an independent, reusable bit of code which divides the UI into smaller pieces
+- Components are independent and reusable bits of code.
+- They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, 
+
+# functional component =>
+- simple function / pure function 
+- does not use this keyword
+- solution without using state 
+- stateless component 
+- mainly responsible for UI 
+- use functional component easy 
+
+# class component => 
+- more feature rich 
+- maintain their own private data 
+- Has complex UI logic 
+- Provide lifecycle hook 
+- stateful component 
+
+
+# what is state of component in react? 
+# what is the props in react? 
+# what is higher order component?
+- A higher-order component acts as a container for other components.
+
+# Explain the term stateless components
+- Stateless components are pure functions that render DOM-based solely on the properties provided to them.
+- A stateless function component is a typical React component that is defined as a function that does not manage any state.
 # What is DOM?
 
 DOM stands for Document Object Model it is the structural representation of all nodes in an HTML document DOM represents the Ul of your applications.  DOM manipulation is required to dynamically change the content of a web page. 
+
+# 4] what is dom element and example 
 
 # State the difference between Real DOM and Virtual DOM
 
@@ -106,24 +169,12 @@ software application. All information retrieved by the Store is produced by the 
 - An action creator is a function that literally creates an action object. 
 - In Redux, action creators simply return an action object and pass the argument value if necessary.
 
-#  Name the important features of React
 
-- Allows you to use 3rd party libraries
-- Time-Saving
-- Faster Development
-- Simplicity and Composable
-- Fully supported by Facebook.
-- Code Stability with One-directional data binding
-- React Components
 
-# Explain the term stateless components
+# Explain React Router / why do you need Routing in React?
+- Because we make SPA's (single page Application) in React
 
-- Stateless components are pure functions that render DOM-based solely on the properties provided to them.
-- A stateless function component is a typical React component that is defined as a function that does not manage any state.
-
-# Explain React Router
-
-React Router is a routing library which allows you to add new screen flows to your application, and it also keeps URL in sync with what’s being shown on the page.
+- React Router is a routing library which allows you to add new screen flows to your application, and it also keeps URL in sync with what’s being shown on the page.
 
 # What is dispatcher?
 
@@ -136,7 +187,7 @@ A dispatcher is a central hub of app where you will receive actions and broadcas
 - A callback function should be called when setState has finished, and the component is retendered. As the setState is asynchronous, which is why it takes in a second callback function.
 
 
-#   1]  CONCEPT EXPLAINER ASSIGNMENT REACT LIFECYCLE METHOD
+#  what is REACT LIFECYCLE METHOD
 
 - Each React component has a lifecycle that you can monitor and manipulate during its three main phases.	
 The three phases are Mounting, Updating, and Unmounting.
@@ -172,7 +223,70 @@ The three phases are Mounting, Updating, and Unmounting.
 - componentWillUnmount()
 - The componentWillUnmount method is called when the component is about to be removed from the DOM.
 
+- 1] getIntialState()
+- 2] componentDidNount()
+- 3] shouldComponentUpdate()
+- 4] ComponentDidUpdate()
+- 5] ComponentWillUnmount()
 
+# context API
+- React Context is a way to manage state globally. - It can be used together with the useState Hook to share state between deeply nested components more easily 
+- It's is better way aviod a prop drilling in react.js 
+
+- ex:  import React, { useContext } from "react";
+import CountContext from "./context";
+
+const Child = () => {
+  const context = useContext(CountContext);
+  const { countHandler } = context;
+
+  return (
+    <div>
+      <button onClick={countHandler}>Increment</button>
+    </div>
+  );
+};
+export default Child;
+
+# hooks 
+- Hooks allow function components to have access to state and other React features.
+
+# What is useState () in React?
+- The React useState Hook allows us to track state in a function component. 
+
+# What is useEffect () hook?
+- The useEffect Hook allows you to perform side effects in your components.
+ - Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+ # What is useRef () hook?
+- useref hooks  used to manipulate dom directly 
+ - The useRef Hook allows you to persist values between renders. 
+ - It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
+
+ # life cycles => 
+ Every component in React goes through a lifecycle of events. I like to think of them as going through a cycle of birth, growth, and death.
+
+Mounting – Birth of your component
+Update – Growth of your component
+Unmount – Death of your component
+ 
+ -  1] The mounting phase is when a new component is created and inserted into the DOM 
+ - 2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when the state is updated. This phase can occur multiple times, which is kind of the point of React.
+ - 3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
+
+ // lifecycle method
+mounting = constructor->render->componentDidMount
+update = render->componentDidUpdate
+unmounting = componentWillUnmount
+
+# Prop drilling
+Prop drilling is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.
+
+#  redux
+#  data flow
+#  prop drilling
+#  hooks?
+#  life cycles
 
 
 

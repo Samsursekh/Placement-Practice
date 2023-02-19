@@ -233,7 +233,7 @@ let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
  wishlist.push(e)
 localStorage.setItem('wishlist', JSON.stringify(wishlist))
 
-#   context API
+# context API
 - React Context is a way to manage state globally. - It can be used together with the useState Hook to share state between deeply nested components more easily 
 - It's is better way aviod a prop drilling in react.js 
 
@@ -263,6 +263,7 @@ export default Child;
  - Some examples of side effects are: fetching data, directly updating the DOM, and timers.
 
  # What is useRef () hook?
+- useref hooks  used to manipulate dom directly 
  - The useRef Hook allows you to persist values between renders. 
  - It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
 

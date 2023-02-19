@@ -26,16 +26,3 @@
 - When you submit a form on a website, your computer sends the request in XML or JSON to the web server.
 
 - API management are all commonly handled by middleware. 
-
-# optimization techniques in react js
-
-- Using Stateless Components and React.
-- Using Production Mode Flag in Webpack.
-- Implementing Dependency optimization.
-- Using React.
-- Avoiding Inline Function Definition in the Render Function.
-- Throttling and Debouncing Event Action in JavaScript
-- Avoid using Index as Key for map
--  Avoiding Props in Initial States
-- Spreading props on DOM elements
-- CSS Animations Instead of JS Animations
