@@ -5,13 +5,13 @@
 - The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
 
 
-Q 1 – What is “use strict” and why?  
+# Q 1 – What is “use strict” and why?  
 1.  The "use strict" directive was new in ECMAScript version 5. 
 2.  It is not a statement, but a literal expression, ignored by earlier versions of JavaScript. 
 3.  The purpose of "use strict" is to indicate that the code should be executed in "strict mode". 
 4.  With strict mode, you cannot, for example, use undeclared variables. 
 5.  All modern browsers support "use strict" except Internet Explorer 9 and lower 
-Why Strict Mode? 
+# Why Strict Mode? 
  Strict mode makes it easier to write "secure" JavaScript. 
  Strict mode changes previously accepted "bad syntax" into real errors. 
  As an example, in normal JavaScript, mistyping a variable name creates a new global 
@@ -23,7 +23,7 @@ non-writable properties.
 existing property, a non-existing variable, or a non-existing object, will throw an error. 
  
  
-Q 2 – What is “this” keyword? 
+# Q 2 – What is “this” keyword? 
  
  In JavaScript, the this keyword refers to an object. 
  Which object depends on how this is being invoked (used or called). 
@@ -38,23 +38,32 @@ The this keyword refers to different objects depending on how it is used:
 and bind() can refer this to any object. 
  
  
-Q 3 – What are different types in JavaScript? 
- 
-1.  Null                
-2.  Undefined 
-3.  Boolean  
-4.  Number  
-5.  BigInt   
-6.  String   
-7.  Symbol 
- 
+# Q 3 – What are different types in JavaScript? 
+# 1] Primitive datatypes
+- 1] Number: This data type is used to store numeric values, including integers, floats, and decimals. For example, 5, 3.14, -10, etc.
+- 2] Null: This data type is used to represent a variable that has no value. For example, var x = null;
+- 3] String: This data type is used to store text values, enclosed in quotes (single or double). For example, "Hello", 'world', "123", etc.
+- 4] symbol: 
+- 5] Boolean: This data type is used to store true or false values. For example, true, false.
+- 6] bigint:
+- 7] Undefined: This data type is used to represent a variable that has not been assigned a value. For example, var x;
+
+# 2] Non primitive 
+
+  -1] Object: This data type is used to store collections of related data or functionality. Objects have properties and methods. For example, var person = { name: "John", age: 30, sayHi: function() { console.log("Hi!"); } };
+
+
+ # what is difference between float and doubble ==> 
+ - The main difference between double and float data types is their precision. Double is a 64-bit floating-point data type, while float is a 32-bit floating-point data type. This means that double can represent larger and more precise values than float. However, double requires twice as much memory as float. In general, float is used when the precision is not critical, while double is used for more precise calculations.
  
   # Q 4 - What is == and === in JavaScript? 
  
-The main difference between the == and === operator in JavaScript is that  
+- The main difference between the == and === operator in JavaScript is that  
+- ==  operator check the  two value equal or not
+- whereas the === operator compares the values as well as the data types of the operands. 
+- For example, 5 == "5" would return true, while 5 === "5" would return false because one is a number and the other is a string. Similarly, 0 == false would return true because both are falsy values, while 0 === false would return false because they are of different types.
  
-The == operator does the type conversion of the operands before comparison,  
-whereas the === operator compares the values as well as the data types of the operands. 
+
  
 # Q 5 - What is NaN and how can we check for it? 
  
@@ -124,7 +133,7 @@ function myFunction() {
  
  
  
-Global Scope: 
+# Global Scope: 
  
  Variables declared Globally (outside any function) have Global Scope. 
  Global variables can be accessed from anywhere in a JavaScript program. 
@@ -166,10 +175,6 @@ var printRandom = function () {
 Hoisting is a weird concept in JavaScript. It makes code unreadable and unpredictable. Hence, we 
 should refrain from using it whenever possible by using the above methods.
 # 11] what is difference for and forEach loop 
-# 12] what is datatype ? how many datatype present in javascript ?
-# 13] difference between float and doubble
-# 7] difference between var and let and const 
-# 8] difference bet undefined and null 
 # 1] what is AJAX 
 # 2] what is Jquery 
 

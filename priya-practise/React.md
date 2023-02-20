@@ -42,8 +42,7 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 
 - Using Stateless Components and React.
 - Using Production Mode Flag in Webpack.
-- Implementing Dependency optimization.
-- Using React.
+- Implementing Dependency optimization Using React.
 - Avoiding Inline Function Definition in the Render Function.
 - Throttling and Debouncing Event Action in JavaScript
 - Avoid using Index as Key for map
@@ -53,7 +52,7 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 
 # what is component in react? 
 - A component is basically a piece of the user interface.
-- A component id basically piece of the code.
+- A component id basically piece of the code. 
 
 
 # 4] what is component in react? difference between functional component and class component?
