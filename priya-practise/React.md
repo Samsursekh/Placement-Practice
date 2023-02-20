@@ -1,3 +1,30 @@
+# what is memoization?
+# what is redux ?
+# difference btween shalow copy or deep copy?
+# what is the difference between framwork and library
+#  explain the flow of redux?
+#  how does react work?
+#  what is the difference between react and redux ?
+# what is the difference between redux and context api?
+#  difference between state and props?
+# what is useContext?
+# what is useMemo
+# ehat is useCallback hook?
+
+# what are classes?
+# how to manage a state?
+# what is difference between contolled components and unctrooled components?
+# what is react-router-dom
+# is it possible to creat a custom hook in react ? yes then how?
+# is react a library
+#  what is react-fiber 
+# what is eventEmmitors
+# what is ref
+# what is dom element and example 
+# what is state of component in react? 
+
+
+
 # what is Reactjs?
 - React is a JavaScript library that makes building user interfaces easy. 
 - It was developed by Facebook.
@@ -54,7 +81,6 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - A component is basically a piece of the user interface.
 - A component id basically piece of the code. 
 
-
 # 4] what is component in react? difference between functional component and class component?
 - there are two types of components 
 - 1] Functional component / representional Component
@@ -79,19 +105,17 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - stateful component 
 
 
-# what is state of component in react? 
-# what is the props in react? 
 # what is higher order component?
 - A higher-order component acts as a container for other components.
 
 # Explain the term stateless components
 - Stateless components are pure functions that render DOM-based solely on the properties provided to them.
 - A stateless function component is a typical React component that is defined as a function that does not manage any state.
+
 # What is DOM?
 
 DOM stands for Document Object Model it is the structural representation of all nodes in an HTML document DOM represents the Ul of your applications.  DOM manipulation is required to dynamically change the content of a web page. 
 
-# 4] what is dom element and example 
 
 # State the difference between Real DOM and Virtual DOM
 
@@ -281,11 +305,14 @@ unmounting = componentWillUnmount
 # Prop drilling
 Prop drilling is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.
 
-#  redux
-#  data flow
-#  prop drilling
-#  hooks?
-#  life cycles
+
+# Async ops =>
+- Async-Ops is a library for performing   a   asynchronous service calls in Redux applications. - Async-Ops is made for use with Redux-Sagas.
+- async is that function always returns a promise.
+
+# MVC pattent vs flux pattern in data flow explain?
+
+
 
 
 

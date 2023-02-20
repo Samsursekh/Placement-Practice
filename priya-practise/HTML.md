@@ -4,6 +4,14 @@
 - HTML5 is a markup language used for structuring and displaying content on the internet. 
 - This includes animations, audio, images, and text, among many other things, and all without the need for additional software. HTML5 is the most recent and most advanced version of HTML.
 
+#  difference between local storage session storage  and cookies?
+
+- localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date.
+- sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.
+
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+ wishlist.push(e)
+localStorage.setItem('wishlist', JSON.stringify(wishlist))
 
 # 1] semantic tags =>
 
