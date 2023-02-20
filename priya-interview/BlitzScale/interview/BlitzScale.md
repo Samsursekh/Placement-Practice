@@ -13,7 +13,7 @@
 
 - In the project work, the most challenging part was user direct login with our google account but with my friends' support, I was able to do it. I watched videos online on youtube and talked with my friends to overcome the challenges.
 
-- When I was doing the project I learned a lot. I learned how to develop,  write logic and implement coding. I have better in coding after joining Masai Coding School.
+- When I was doing the project I learned a lot. I learned how to develop,  write logic and implement coding.
 
 # 3] Counter using setTimeout react(start , pause, reset)
 
