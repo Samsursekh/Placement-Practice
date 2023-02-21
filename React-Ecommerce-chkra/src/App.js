@@ -1,19 +1,14 @@
 import "./App.css";
-// import Footer from "./Components/Footer";
-// import Navbar from "./Components/Navbar";
-// // import Video from "./Components/Video";
-// import AllRoutes from "./Routes/AllRoutes";
-import Timer from  "./Components/Timer"
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import AllRoutes from "./Routes/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      {/* <Video/> */}
-      {/* <AllRoutes/>
+      <Navbar/>
+      <AllRoutes/>
       <Footer />
-     */}
-     <Timer/>
     </div>
   );
 }

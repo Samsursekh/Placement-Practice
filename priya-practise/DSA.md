@@ -1,6 +1,8 @@
-# what is linked list ?
-# print the largest number present in an array
+# what is linked list?
+
+
 # Generate a random number?
+
 # Assign random numbers to the name given in the array.
 - array = [priya, priti, vaishu]
 - output = [priya012, priti321, vaishu453]
@@ -10,7 +12,7 @@
 # Count the frequency of a given character in the given string.
 # Explain the concept behind Circular queue
 
-# print largest element in array ==>
+# # print the largest number present in an array?==>
  let arr = [1,5,2,7,9,0]
  let max = 0;
  for(let p=0; p<arr.length; p++){
