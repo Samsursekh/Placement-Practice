@@ -1,5 +1,4 @@
 
-
  # what is the css?
  - css is a simple design language used for making web pages look good and presentable 
 
@@ -28,3 +27,5 @@ move relative element using top,bottom,left and right.
 
 - the element is positioned based on the user's scroll position.After
 element goes to scroll position it act as fixed and we give it using top,left,right,bottom.
+
+#  difference betwwen the block element and inline element ?

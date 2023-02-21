@@ -1,3 +1,8 @@
+# what is node js?
+
+# how to deploy your mern projcet?
+
+
 # mongo ==> commond shell
 - mongo is the command-line shell that connects to a specific instance of monogod.
 

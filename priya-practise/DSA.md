@@ -1,3 +1,15 @@
+# what is linked list ?
+# print the largest number present in an array
+# Generate a random number?
+# Assign random numbers to the name given in the array.
+- array = [priya, priti, vaishu]
+- output = [priya012, priti321, vaishu453]
+#  find the 2nd largest number in the array.
+# rotate the matrix in clockwise direction.
+# Balanced parentheses problem 
+# Count the frequency of a given character in the given string.
+# Explain the concept behind Circular queue
+
 # print largest element in array ==>
  let arr = [1,5,2,7,9,0]
  let max = 0;

@@ -1,6 +1,14 @@
 
-#  what are javascript considered as single threaded language
+# difference between call apply bind?
+# what is rest operator?
+# what is spread operator?
+# what is the  difference betwwen []===[]
+# Explain async await  
+# what is promises ans its status?
+# explain oops concept?
+# 
 
+#  what are javascript considered as single threaded language
 - JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
 - The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
 
@@ -112,7 +120,7 @@ Example:
 } 
 // x CAN be used here 
  
-Function Scope:  
+# Function Scope:  
  
  JavaScript has function scope: Each function creates a new scope. 
  Variables defined inside a function are not accessible (visible) from outside the function. 
@@ -152,7 +160,7 @@ and variables are declared, they are moved to the top of their scope regardless 
 scope is global or local 
  
  
-Some ways to avoid hoisting are: 
+# Some ways to avoid hoisting are: 
 •  Use let or const — As explained above, using let or const instead of var would throw an 
 exception and not let the program run, hence helping catch the issue earlier. 
 •  Use function expressions instead of function declarations 
@@ -479,12 +487,5 @@ function print(from, to){
 }
 print(0,5)
 
-#  difference between local storage session storage  and cookies?
 
-- localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date.
-- sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.
-
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
- wishlist.push(e)
-localStorage.setItem('wishlist', JSON.stringify(wishlist))
 
