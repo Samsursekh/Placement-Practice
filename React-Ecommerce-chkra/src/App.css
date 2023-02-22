@@ -1,4 +1,7 @@
-
+*{
+  padding: 0;
+  margin: 0;
+}
 
  #Navbar{
   display:flex;
@@ -6,6 +9,7 @@
   text-decoration: none;
   background-color: teal;
   margin-bottom:50px;
+  padding:20px
 }
 #Navbar a{
   text-decoration: none;
@@ -29,8 +33,12 @@
   border: "2px solid red";
    height:auto;
    width:300px;
+   border:3px solid red;
    text-align: center;
-   padding:20px;
+
+   padding:30px;
+padding-bottom: 40px;
+   
    border-radius: 20px;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -109,6 +117,18 @@ height: 50px;
   justify-content: space-between;
   margin-top: 30px;
   
+
+}
+
+
+
+.desc{
+ min-height: 80px;
+display: -webkit-box; 
+-webkit-line-clamp: 3; /* No worries, supported by all browsers */
+-webkit-box-orient: vertical;
+overflow: hidden; /* Hides text after ellispsis */
+border:3px solid black;
 
 }
 

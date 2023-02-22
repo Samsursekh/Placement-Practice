@@ -59,11 +59,10 @@ function Product() {
                 data.map((e)=> {
                   return  <div id="box" key={e.id}>
                 <img src={e.images} alt="images"/>
-                <h2>{e.id}</h2>
                 <h4>{e.price}</h4>
                 <h3>{e.category.name}</h3>
                 <h3>{e.title}</h3>
-                <p>{e.description}</p>
+                <p className="desc">{e.description}</p>
                 <button>ADD TO CART</button>
                 <button>DELETE</button> 
         </div>
