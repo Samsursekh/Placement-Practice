@@ -1,7 +1,7 @@
 
 # create the timer on codesandbox?  [completed]
-# create a stopwatch with start pause and reset button ? [cpmpleted]
-# create a from and show thd  data in your database  display in on screen including as well as images?
+# create a stopwatch with start pause and reset button ? [completed]
+# create a from and show thd  data in your database  display in on screen including as well as images? [completed]
 # create a todo application functionallity create, delete , edit
 # create a counter app manage state using redux
 # create a array of object ? and map data in react? [completed]

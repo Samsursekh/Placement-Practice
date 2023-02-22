@@ -4,27 +4,24 @@ function Product() {
 
     const [data, setData] = useState([]);
     const [filterBy, setFilterBy] =useState("")
-    const [sortBy, setSortBy] =useState("price")
-    const [limit, setLimit] = useState(10);
-    const [order, setOrder] = useState("asc");
-    const [totalpages, setTotalPages] =useState(data.totalPages|| 4)
+   
         
-    async function getData({ limit, filterBy, sortBy, order}){
-      let res = await fetch(`https://api.escuelajs.co/api/v1/products?limit=${limit}&filter=${filterBy}&sort=${sortBy}&order=${order}`);
+    async function getData({filterBy}){
+      let res = await fetch(`https://api.escuelajs.co/api/v1/products?filter=${filterBy}`);
       let data = await res.json();
-    //   console.log(data);
+      console.log(data);
        setData(data);
     }
 
 
     useEffect(() => {
-       getData({limit, filterBy, sortBy, order})
-    },[limit, filterBy, sortBy, order])
+       getData({filterBy})
+    },[filterBy])
 
 
     return (
 
-      <div>
+  <div>
  <div className="img-div" >
  <img src='https://thumbs.dreamstime.com/z/autumn-winter-fashion-mannequins-fashion-clothing-shop-store-led-lights-display-shopping-mall-guangzhou-kwangchow-47516482.jpg' alt="mall" />
   </div>
@@ -39,13 +36,13 @@ function Product() {
   <option value="shoes">Shoes</option>
  </select>
 
- <select id="sort" placeholder="orderOfSort" onChange={(e) => setOrder(e.target.value)}>
+ <select id="sort" placeholder="orderOfSort">
 <option value="">Sort</option>
 <option value="asc">ASCENDING</option>
 <option value="desc">DESCNDING</option>
  </select>
 
- <select placeholder="limit" onChange={(e) => setLimit(e.target.value)}>
+ <select placeholder="limit">
             <option value="5">5</option>
             <option value="10">10</option>
             <option value="15">15</option>

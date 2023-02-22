@@ -125,3 +125,14 @@ function Todo() {
   );
 }
 export default Todo;
+
+
+
+Create:
+To create a new task in the Todo application, you need to implement a form that allows the user to input the task name and other details such as description, priority, and deadline. When the user submits the form, you can use a POST request to send the task data to the server and add the task to the database. After that, you can update the UI to display the new task on the list of tasks.
+
+Delete:
+To delete a task in the Todo application, you need to implement a delete button or icon next to each task on the list. When the user clicks on the delete button, you can use a DELETE request to remove the task from the database. After that, you can update the UI to remove the task from the list of tasks.
+
+Edit:
+To edit a task in the Todo application, you need to implement an edit button or icon next to each task on the list. When the user clicks on the edit button, you can display a form that allows the user to update the task details such as name, description, priority, and deadline. When the user submits the form, you can use a PUT request to update the task data in the database. After that, you can update the UI to display the updated task details on the list of tasks.

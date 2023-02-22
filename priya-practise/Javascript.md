@@ -1,12 +1,54 @@
 
 # difference between call apply bind?
 # what is rest operator?
+The rest operator, represented by three dots ( ... ), allows a function to receive an indefinite number of arguments as an array. It enables the function to capture all remaining parameters that are not assigned to any argument. This operator can be used in functions to accept an arbitrary number of arguments, which makes it a useful tool for creating more flexible and dynamic functions. It is also known as the spread syntax when used to spread the contents of an array or object into another array or object.
+
 # what is spread operator?
+A spread operator is a syntax in JavaScript that allows an iterable (such as an array or string) to be expanded in places where multiple arguments or elements are expected. It is denoted by the ellipsis (three dots) followed by the name of the iterable. The spread operator can be used in function calls, array literals, and object literals to make it easier to work with collections of data. It creates a copy of the original data and avoids modifying the original object or array.
+
 # what is the  difference betwwen []===[]
+The expression []===[] compares two empty arrays in JavaScript using the strict equality operator (===). The result of this comparison is true because both arrays have the same data type (array) and they are both empty.
+
+In other words, []===[] checks if two separate arrays are exactly the same array, with the same data type, length, and elements in the same order. It does not check for equality of the contents of the arrays.
+
+
 # Explain async await  
+Async/await is a language feature in JavaScript that allows for the creation of asynchronous code that is more readable and easier to work with. It allows functions to be paused and resumed, while waiting for asynchronous code to complete.
+
+The "async" keyword is used to declare a function that will be asynchronous. Inside the async function, "await" is used to pause the function execution until an asynchronous operation (such as an API call or a database query) completes.
+
+For example, consider the following code:
+
+async function getUser(id) {
+const response = await fetch(https://api.example.com/user/${id});
+const data = await response.json();
+return data;
+}
+
+In this code, the "getUser" function is declared as async, which allows the use of the "await" keyword inside the function. The function makes an API call to fetch user data, and then waits for the response to be returned before parsing the response data as JSON and returning it.
+
+Overall, async/await simplifies asynchronous programming by allowing developers to write code that reads more like synchronous code, without the need for complex callback functions or promises.
+
 # what is promises ans its status?
+
+Promises are a programming concept that enables asynchronous operations in JavaScript. They are objects that represent the eventual completion or failure of an asynchronous operation and provide a way to handle its result. The status of a promise can be one of three states: pending, fulfilled, or rejected. When a promise is pending, it means that the asynchronous operation is still in progress. Once it is fulfilled, it means that the operation has completed successfully, and the promise returns a value. On the other hand, when a promise is rejected, it means that the operation failed, and the promise returns an error.
+
+Promises are widely used in modern JavaScript development and have become a crucial part of asynchronous programming. They were introduced in ECMAScript 6 and have been adopted by major JavaScript libraries and frameworks.
+
 # explain oops concept?
-# 
+ Object-Oriented Programming (OOP) is a programming paradigm that emphasizes on the use of objects, rather than just functions and procedures. It provides a modular and structured approach to code development, making it easier to build, maintain and modify complex applications. In JavaScript, OOP is implemented using the following concepts:
+
+Classes: Classes are used to create objects that share similar characteristics. A class is like a blueprint that defines the properties and methods of an object. In JavaScript, classes are defined using the class keyword.
+
+Objects: Objects are instances of classes. They have their own unique identity and can be created using the new keyword followed by the class name.
+
+Encapsulation: Encapsulation is a concept that ensures that the internal workings of an object are hidden from the outside world. This is achieved by defining private and public methods and properties.
+
+Inheritance: Inheritance allows objects to inherit properties and methods from other objects. This helps in code reuse and allows for the creation of more complex objects.
+
+Polymorphism: Polymorphism allows objects to take on multiple forms or behaviors. This means that the same method can be used to perform different actions depending on the context in which it is used.
+
+Overall, OOP in JavaScript helps to create code that is easier to manage, understand and maintain, by providing a structured and modular approach to development.
 
 #  what are javascript considered as single threaded language
 - JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.

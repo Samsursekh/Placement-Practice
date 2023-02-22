@@ -1,6 +1,19 @@
 # what is node js?
+Node.js is an open-source, cross-platform, server-side runtime environment that allows developers to build fast and scalable network applications with JavaScript. It is built on the V8 JavaScript engine, which is used in Google Chrome, and provides an event-driven, non-blocking I/O model that makes it ideal for building real-time applications and APIs. Node.js offers a rich set of modules and libraries that help developers build a wide range of applications, from simple command-line tools to complex web applications. It is widely used for developing server-side applications, microservices, and APIs, and has become an essential tool for modern web development.
 
 # how to deploy your mern projcet?
+Choose a hosting service: Select a hosting service provider like AWS, Heroku, or Digital Ocean.
+Create a production build: Create a production-ready build of your MERN project using the npm run build command.
+Set up the server: Set up your server, including installing any dependencies and setting environment variables.
+Deploy your code: Upload the production build to your server or hosting provider.
+Run your server: Start your server by running the command for your specific hosting service.
+Verify deployment: Test your deployment by visiting the URL of your server and making sure everything is working as expected.
+Note: Before deploying, make sure to thoroughly test your application to ensure it works properly in a production environment.
+
+
+
+
+
 
 
 # mongo ==> commond shell

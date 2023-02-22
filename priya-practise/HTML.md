@@ -9,8 +9,23 @@
 - localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date.
 - sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.
 
+Local storage, session storage, and cookies are all ways to store data in a user's web browser, but there are some key differences between them:
+
+Persistence: Cookies are the only one of the three that have an expiration date and can be set to last for a specific time period, whereas local storage and session storage will remain in the browser until the user clears their cache or the storage is manually deleted.
+
+Capacity: Cookies can only store up to 4KB of data, while local storage and session storage can store much larger amounts of data.
+
+Accessibility: Cookies can be accessed by both the server and the client, while local storage and session storage are only accessible by the client (i.e., the browser).
+
+Automatic sending to the server: Cookies are automatically sent to the server with each HTTP request, whereas local storage and session storage are not automatically sent and must be manually included in requests.
+
+Use: Cookies are often used to store user preferences or login information, while local storage and session storage are typically used to store temporary data or information that needs to persist between page loads within the same session.
+
+Overall, the choice between local storage, session storage, and cookies depends on the specific use case and the type of data that needs to be stored.
+
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
  wishlist.push(e)
+ 
 localStorage.setItem('wishlist', JSON.stringify(wishlist))
 
 # 1] semantic tags =>
