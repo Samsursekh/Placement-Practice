@@ -17,7 +17,4 @@ Thank you Masai 🙂🙂
 
 # reference notes ==> 
 
-Hi, I want to get a referal for a current opening for Frontend Developer role in your company.
-The role suits my experience and skills. please accept my invite so that I can share my resume
-for the same.I have a solid understanding of the MERN stack required for these positions, and I am confident that my skills and knowledge make me a strong candidate for the role. I am excited about the opportunity to apply my 
-skills and experience to real-world problems, and I believe that your company would be an excellent place for me to do so.Thank you!
+Hi, I am Priyanka Phulmante I want to get a referral for a current opening for a Full Stack Developer role in your company. The role suits my experience and skills. please accept my invitation so that I can share my resume for the same. I have a solid understanding of the MERN stack required for these positions, and I am confident that my skills and knowledge make me a strong candidate for the role. I am excited about the opportunity to apply my skills and experience to real-world problems, and I believe that your company would be an excellent place for me to do so. Thank you!
