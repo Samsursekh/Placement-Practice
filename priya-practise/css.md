@@ -29,12 +29,6 @@ Margin - This is the space outside the border of the element, and it helps to se
 By manipulating the size and positioning of these layers, developers can create a wide range of designs and layouts for their web pages. The box model is a fundamental concept in CSS and is essential for creating responsive and visually appealing web pages.
 
 
-
-
-
-
-
-
  # 3] css Positions Property  ==>
  - The types of positioning in CSS are-
 # 1)static:
