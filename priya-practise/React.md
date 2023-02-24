@@ -4,30 +4,66 @@
 # what is the difference between framwork and library
 #  explain the flow of redux?
 #  how does react work?
-#  what is the difference between react and redux ?
-# what is the difference between redux and context api?
-#  difference between state and props?
-# what is useContext?
-# what is useMemo
-# ehat is useCallback hook?
+# what is the difference between react and redux?
 
-# what are classes?
+# what is the difference between redux and context api?
+
+# what is useMemo?
+useMemo is a React Hook that lets you cache the result of a calculation between re-renders.
+useMemo is a built-in React hook that is used for performance optimization by caching the result of a function call and returning it when the input values to that function have not changed. This helps to prevent unnecessary re-rendering of components that depend on the output of that function. It takes two arguments: a function that returns the value to be cached, and an array of dependencies that determines when the function should be recomputed. If the dependencies have not changed, the cached value is returned, otherwise the function is re-executed and the new value is cached. It is commonly used for expensive calculations or when the output of a function is used in multiple places within a component.
+
+# what is useCallback hook?
+useCallback is a React Hook that is used to optimize the performance of functional components. It is used to memoize a function and prevent it from being re-created on each re-render of the component. By memoizing the function, the component can avoid unnecessary re-renders and improve its performance.
+
+When a component that uses the useCallback hook re-renders, it will return the same memoized function instance unless any of its dependencies have changed. If any of the dependencies have changed, then the hook will create a new function instance and return it.
+
+The useCallback hook takes two arguments: the function that needs to be memoized, and an array of dependencies that the function relies on. If any of the dependencies change, then the function will be re-created.
+
+The useCallback hook is often used in conjunction with the useMemo hook to optimize the performance of functional components.
+
+# what are classes and object?
+// Class: 
+1. A class is a template for creating objects in program.
+2. A class is a logical entity
+3. A class does not allocate memory space when it is created.
+4. You can declare class only once.
+5. Class generates objects
+
+// objects; 
+1. The object is an instance of a class.
+2. Object is a physical entity
+3. Object allocates memory space whenever they are created.
+4. You can create more than one object using a class.
+5. Objects provide life to the class.  
+
 # how to manage a state?
+
 # what is difference between contolled components and unctrooled components?
+
 # what is react-router-dom
+
 # is it possible to creat a custom hook in react ? yes then how?
+
 # is react a library
-#  what is react-fiber 
+
+# what is react-fiber 
+
 # what is eventEmmitors
+
 # what is ref
+
 # what is dom element and example 
+
 # what is state of component in react? 
+The state of a component in React is an object that holds information about the component, including its properties and values. 
 
 
 
 # what is Reactjs?
-- React is a JavaScript library that makes building user interfaces easy. 
+- React is a free open JavaScript library that makes building user interfaces easy. 
 - It was developed by Facebook.
+- It is single page page application
+- It is cross platform open sourse library
 
 
 # Does React use HTML? 
@@ -104,6 +140,24 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - Provide lifecycle hook 
 - stateful component 
 
+
+# hooks 
+- Hooks allow function components to have access to state and other React features.
+In React, a hook is a function that allows developers to use state and other React features in functional components. 
+- Some common hooks include useState for managing state, useEffect for handling side effects, useContext for consuming context, and useMemo and useCallback for performance optimization. Hooks are designed to be composable and allow developers to easily reuse and share stateful logic across different components.
+
+# What is useState () in React?
+- The React useState Hook allows us to track state in a function component.
+m
+
+# What is useEffect () hook?
+- The useEffect Hook allows you to perform side effects in your components.
+ - Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+ # What is useRef () hook?
+- useref hooks  used to manipulate dom directly 
+ - The useRef Hook allows you to persist values between renders. 
+ - It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
 
 # what is higher order component?
 - A higher-order component acts as a container for other components.
@@ -196,8 +250,9 @@ software application. All information retrieved by the Store is produced by the 
 
 # Explain React Router / why do you need Routing in React?
 - Because we make SPA's (single page Application) in React
+- React Router is a routing library which allows you to add new screen flows to your application, 
+  and it also keeps URL in sync with what’s being shown on the page.
 
-- React Router is a routing library which allows you to add new screen flows to your application, and it also keeps URL in sync with what’s being shown on the page.
 
 # What is dispatcher?
 
@@ -253,11 +308,12 @@ The three phases are Mounting, Updating, and Unmounting.
 - 5] ComponentWillUnmount()
 
 # context API
-- React Context is a way to manage state globally. - It can be used together with the useState Hook to share state between deeply nested components more easily 
+- React Context is a way to manage state globally. 
+- It can be used together with the useState Hook to share state between deeply  nested components more easily 
 - It's is better way aviod a prop drilling in react.js 
 
 - ex:  import React, { useContext } from "react";
-import CountContext from "./context";
+  import CountContext from "./context";
 
 const Child = () => {
   const context = useContext(CountContext);
@@ -271,23 +327,11 @@ const Child = () => {
 };
 export default Child;
 
-# hooks 
-- Hooks allow function components to have access to state and other React features.
 
-# What is useState () in React?
-- The React useState Hook allows us to track state in a function component. 
-
-# What is useEffect () hook?
-- The useEffect Hook allows you to perform side effects in your components.
- - Some examples of side effects are: fetching data, directly updating the DOM, and timers.
-
- # What is useRef () hook?
-- useref hooks  used to manipulate dom directly 
- - The useRef Hook allows you to persist values between renders. 
- - It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
 
  # life cycles => 
- Every component in React goes through a lifecycle of events. I like to think of them as going through a cycle of birth, growth, and death.
+ - Every component in React goes through a lifecycle of events. 
+ - I like to think of them as going through a cycle of birth, growth, and death.
 
 Mounting – Birth of your component
 Update – Growth of your component
@@ -297,10 +341,11 @@ Unmount – Death of your component
  - 2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when the state is updated. This phase can occur multiple times, which is kind of the point of React.
  - 3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
 
- // lifecycle method
+# lifecycle method
 mounting = constructor->render->componentDidMount
 update = render->componentDidUpdate
 unmounting = componentWillUnmount
+
 
 # Prop drilling
 Prop drilling is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.
