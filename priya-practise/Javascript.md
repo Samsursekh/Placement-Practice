@@ -530,4 +530,11 @@ function print(from, to){
 print(0,5)
 
 
+# callback=>
+ the function which can be passed as an argument inside another function and called later, to get async behavior
+ 
+# callback hell =>
+  function inside function like nested callback. which blocks our code of execution inside call stack . that is called as callback hell
+
+
 
