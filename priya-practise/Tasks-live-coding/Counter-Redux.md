@@ -17,6 +17,7 @@ const initialState = {
 }
 Example reducer function:
 
+
 javascript
 Copy code
 function counterReducer(state = initialState, action) {
@@ -31,6 +32,7 @@ function counterReducer(state = initialState, action) {
       return state
   }
 }
+
 Create action types and action creators
 Define constants for the action types
 Create action creator functions that return an object with a type property and any additional data needed for the action
@@ -49,6 +51,7 @@ function increment() {
   return { type: INCREMENT }
 }
 
+
 function decrement() {
   return { type: DECREMENT }
 }
@@ -60,6 +63,7 @@ Connect the store to the app
 Import Provider from the react-redux library
 Wrap the root component of the app with the Provider component and pass the store as a prop
 Example index.js file:
+
 
 javascript
 Copy code
@@ -84,6 +88,7 @@ Define a function that maps the state from the store to props for the component
 Define a function that maps the action creators to props for the component
 Wrap the component with the connect function, passing in the two mapping functions as arguments
 Example Counter component:
+
 
 javascript
 Copy code
