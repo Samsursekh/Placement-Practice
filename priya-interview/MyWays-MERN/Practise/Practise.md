@@ -1,5 +1,164 @@
 <!-- https://docs.google.com/document/d/1E299icTnP9XV1dgCyAe-gm1UdchJ3OFrPAWVAXL8rdE/edit?usp=sharing -->
 
+
+# callBack function =>
+# callback=>
+ - the function which can be passed as an argument inside another function and called later, to get async behavior
+
+- callbackfunction is that passed a function inside a  another function as an argument 
+- A callback is a function passed as an argument to another function. 
+- This technique allows a function to call another function. A callback function can run after another function has finished.
+- they work asyrnomsly.
+
+- ex ==> 
+function myFunction(callback) {
+  // do some work here
+  callback();
+}
+function myCallback() {
+  console.log("The callback was called.");
+}
+myFunction(myCallback);
+
+- In this example, we have two functions: myFunction and myCallback. myFunction takes a function as a parameter and then executes that function as a "callback" after it has done some work.
+
+- In this case, we pass myCallback as the callback function to myFunction. When myFunction is called, it does some work and then executes the callback function. In this case, it calls myCallback, which simply logs a message to the console.
+
+- So when we run myFunction(myCallback), the output would be: "The callback was called."
+
+
+
+#  what is call back hell ? how callbacks work? 
+# callback hell =>
+-  function inside function like nested callback. which blocks our code of execution inside call stack . that is called as callback hell
+- Callback hell is a term used to describe a situation where code contains multiple levels of nested callbacks.
+-  This can make the code difficult to read, understand, and maintain.
+
+- The phenomenon which happens when we passed one by one multiple callbacks within a function is called a callback hell.
+
+- The two problems with Call back are :
+- 1. Call back hell : Here we pass one call back function into another and that call back into another, thus creating an unreadable and unmaintanable code. This is also known as pyramid of doom. 
+- 2. Inversion of control : Here we pass call back into another function. This leads to loss of control of our code. Control moves to the other functon where we used call back.
+
+- ex : const data = ["priya", "riya", "shreya"]
+        api.createOrder(data, function(){
+            api.proceedTopayment(function(){
+                api.showOrderSummry(){
+                    function({
+                        api.updateWallet()
+                    })
+                }
+            })
+        })
+       
+       -The code defines an array of constant data containing three strings: "priya", "riya", and "shreya". The code then calls the "createOrder" function of an API object with this data as a parameter. The createOrder function takes a callback function as a second parameter.
+
+    - Inside the createOrder function, the code calls the "proceedTopayment" function of the same API object with another callback function as a parameter.
+
+    - Inside the proceedTopayment function, the code calls the "showOrderSummry" function of the API object with another callback function as a parameter.
+
+    - Inside the showOrderSummry function, the code defines a function as a parameter which calls the "updateWallet" function of the API object.
+
+    - Overall, the code is an example of callback hell where multiple nested functions are called with callback functions as parameters.
+
+
+# how  event loop  works and node.js works?
+- Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks. 
+- The event loop executes tasks from the event queue only when the call stack is empty.
+- i.e. there is no ongoing task. The event loop allows us to use callbacks and promises.
+
+- 1)In event loop all application code that is inside callback functions.(non-top-level code)
+
+- 2)Node js is event-driven architecture.event emitted,event loops picks them up and callbacks are called.
+
+- ex: ==> 
+
+const funct2 = () => {
+    setTimeout(() => {
+        console.log("func2 is starting")
+    }, 3000);
+}
+
+const func1 = () => {
+    console.log('func1 is starting')
+    funct2();
+    console.log("func1 is ending");
+}
+
+func1();
+
+- output ==> 
+- func1 is starting
+- func1 is ending
+- func2 is starting
+
+
+#  digram of event loop 
+
+- 1] excution stack / call stack
+- create a global excution context
+
+- 2] web API 
+- settimeout()
+- DOM
+- AJAX/API Calls
+
+- 3] message queue
+
+- 4] event loop
+
+# what is the promise and give one example?
+
+What is Promise?
+- Promise object is a placeholder for certain period of time until we receive value from asynchronous operation.
+
+- A container for a future value.
+
+- A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+ - ex => 
+const promise = new Promise((resolve, rejected) => {
+    setTimeout(() => {
+        resolve("promise is resolve")
+    }, 1000)
+}, 
+(rejected) => {
+    console.log("promise is rejected")
+})
+promise.then((value) => console.log(value));
+
+
+# what are the closures with examples 
+
+- closures is that the function bundled together with lexical envirnoment is known as closures 
+
+function outer(){
+    var a=20;
+    function inner(){
+        console.log(a)
+    }
+    console.log(inner);
+}
+console.log(outer);
+
+
+
+# Advantages of Closure:
+
+- Module Design Pattern
+- Currying
+- Memoize
+- Data hiding and encapsulation
+- setTimeouts etc.
+- event handlers and callback  - - functions, and in partial 
+
+# Disadvantages of Closure:
+
+- Over consumption of memory
+- Memory Leak
+- Freeze browser
+
+
 # what is MERN ?
 - MERN is a technology stack used for building web applications. It is an acronym that stands for:
 
@@ -25,7 +184,7 @@ Choose a data type for the variable. The data type determines the kind of values
 Use the syntax appropriate to the programming language you are using. In most programming languages, you declare a variable by using the keyword "var" or "let", followed by the variable name, an equal sign (=), and the initial value of the variable. For example, in JavaScript, you can declare a variable like this:
 
 # How many types of components are there in React?
-There are two types of components in React: functional components and class components. However, with the introduction of hooks in React 16.8, functional components can also have state and lifecycle methods, making them more powerful and similar to class components
+There are two types of components in React: functional components can also have state and lifecycle methods, making them more powerful and similar to class components
 
 - There are two types of components in React: functional components and class components. Functional components are simple functions that return JSX, while class components are JavaScript classes that extend React.Component and have a render method that returns JSX.
 
@@ -115,7 +274,4 @@ Easy to learn: React has a relatively low learning curve, making it easy for new
 Large community and support: React has a large community of developers and a strong support system. This means developers can easily find help and resources to solve any problems they may encounter.
 
 Cross-platform development: React can be used to develop applications for multiple platforms, including web, mobile, and desktop. This makes it a versatile tool for developers.
-
-
-
 

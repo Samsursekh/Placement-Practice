@@ -355,11 +355,6 @@ Prop drilling is a situation where data is passed from one component through mul
 - Async-Ops is a library for performing   a   asynchronous service calls in Redux applications. - Async-Ops is made for use with Redux-Sagas.
 - async is that function always returns a promise.
 
-# MVC pattent vs flux pattern in data flow explain?
-
-
-
-
 
 
 

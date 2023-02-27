@@ -1,5 +1,8 @@
 # what is node js?
-Node.js is an open-source, cross-platform, server-side runtime environment that allows developers to build fast and scalable network applications with JavaScript. It is built on the V8 JavaScript engine, which is used in Google Chrome, and provides an event-driven, non-blocking I/O model that makes it ideal for building real-time applications and APIs. Node.js offers a rich set of modules and libraries that help developers build a wide range of applications, from simple command-line tools to complex web applications. It is widely used for developing server-side applications, microservices, and APIs, and has become an essential tool for modern web development.
+- Node.js is an open-source, cross-platform, server-side runtime environment that allows developers to build fast and scalable network applications with JavaScript. 
+- It is built on the V8 JavaScript engine, which is used in Google Chrome, and provides an event-driven, non-blocking I/O model that makes it ideal for building real-time applications and APIs.
+-  Node.js offers a rich set of modules and libraries that help developers build a wide range of applications, from simple command-line tools to complex web applications. 
+- It is widely used for developing server-side applications, microservices, and APIs, and has become an essential tool for modern web development.
 
 # how to deploy your mern projcet?
 Choose a hosting service: Select a hosting service provider like AWS, Heroku, or Digital Ocean.
@@ -11,7 +14,47 @@ Verify deployment: Test your deployment by visiting the URL of your server and m
 Note: Before deploying, make sure to thoroughly test your application to ensure it works properly in a production environment.
 
 
+# what are the collections in mongodb?
+- A collection in MongoDB is a group of documents.
 
+- Collections in a NoSQL database like MongoDB correspond to tables in relational database management systems (RDBMS) or SQL databases.
+
+- In general, we recommend limiting collections to 10,000 per replica set. When users begin exceeding 10,000 collections, they typically see decreases in performance.
+
+#  what are javascript considered as single threaded language
+
+- JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
+- The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
+
+# Why node JS is a single threaded language?
+
+- A Node. js application runs on single thread and the event loop also runs on the same thread. Hence, we can say Node. js is single-threaded but the catch is that there are some libraries in Node.
+
+- It follows Single Threaded with Event Loop Model. Node JS Processing model mainly based on Javascript Event based model with Javascript callback mechanism.
+
+# what is middleware? explain with an example
+- Middleware is software and cloud services that provide common services and capabilities to applications and help developers and operators build and deploy applications more efficiently.
+
+-  Middleware acts like the connective tissue between applications, data, and users.
+
+- ex: a web server is middleware that connects websites to the backend database. 
+- When you submit a form on a website, your computer sends the request in XML or JSON to the web server.
+
+- API management are all commonly handled by middleware. 
+
+# what is middleware ? 
+
+- Middleware is software and cloud services that provide common services and capabilities to applications and help developers and operators 
+- Middleware is software that different applications use to communicate with each other. It provides functionality to connect applications intelligently and efficiently so that you can innovate faster. Middleware acts as a bridge between diverse technologies, tools, and databases so that you can integrate them seamlessly into a single system. The single system then provides a unified service to its users. For example, a Windows frontend application sends and receives data from a Linux backend server, but the application users are unaware of the difference.
+
+# Why is middleware important?
+Middleware started as a bridge between new applications and legacy systems before it gained popularity in the 1980s. Developers initially used it to integrate new programs with earlier systems without rewriting the earlier code. Middleware has become an important communication and data management tool in distributed systems.
+
+Developers use middleware to support application development and simplify design processes. This leaves them free to focus on business logic and features instead of connectivity between different software components. Without middleware, developers would have to build a data exchange module for each software component that connects to the application. This is challenging because modern applications consist of multiple microservices or small software components that talk to each other.
+
+# what is firebase ?
+
+ # MVC pattent vs flux pattern in data flow explain?
 
 
 
@@ -132,32 +175,3 @@ db.comments.find({member_since: {$gt:30}})
 db.comments.find({member_since: {$gte:30}})
 
  
-
-# what are the collections in mongodb?
-
-- A collection in MongoDB is a group of documents.
-
-- Collections in a NoSQL database like MongoDB correspond to tables in relational database management systems (RDBMS) or SQL databases.
-
-- In general, we recommend limiting collections to 10,000 per replica set. When users begin exceeding 10,000 collections, they typically see decreases in performance.
-
-#  what are javascript considered as single threaded language
-
-- JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
-- The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
-
-# Why node JS is a single threaded language?
-
-- A Node. js application runs on single thread and the event loop also runs on the same thread. Hence, we can say Node. js is single-threaded but the catch is that there are some libraries in Node.
-
-- It follows Single Threaded with Event Loop Model. Node JS Processing model mainly based on Javascript Event based model with Javascript callback mechanism.
-
-# what is middleware? explain with an example
-- Middleware is software and cloud services that provide common services and capabilities to applications and help developers and operators build and deploy applications more efficiently.
-
--  Middleware acts like the connective tissue between applications, data, and users.
-
-- ex: a web server is middleware that connects websites to the backend database. 
-- When you submit a form on a website, your computer sends the request in XML or JSON to the web server.
-
-- API management are all commonly handled by middleware. 
