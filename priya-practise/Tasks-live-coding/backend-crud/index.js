@@ -1,29 +1,17 @@
-const express= require('express')
-const app = express();
+const express = require('express');
+
+const router = require('./router');
+
+const app =express();
+require('./db/db')
 
 
-const reqFilter = (req, res, next) => {
-if(!req.query.age){
- res.send("please provide age")
-
-}else if(req.query.age<18){
-res.send("you can not access")
-
-}else{
-next();
-}
-}
-
-app.use(reqFilter)
-
-app.get('/', (req, res) => {
-res.send('welcome to home page')
-
+app.use(express.json());
+app.use(router);
+app.listen(5000, () => {
+    console.log('server is running on port 5000')
 });
 
-app.get('/users', (req, res) => {
-res.send('welcome to users page')
 
-});
 
-app.listen(5000)
+
