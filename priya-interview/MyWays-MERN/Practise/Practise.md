@@ -1,5 +1,18 @@
 <!-- https://docs.google.com/document/d/1E299icTnP9XV1dgCyAe-gm1UdchJ3OFrPAWVAXL8rdE/edit?usp=sharing -->
 
+# HTML :
+
+# CSS :
+
+# JAVASCRIPT :
+
+#  MongoDB: a popular NoSQL database that stores data in a flexible, JSON-like format.
+
+#  Express: a web application framework for Node.js that provides a set of tools for building web applications, including routing and middleware.
+
+# React: React is free opern sourse JavaScript library for building user interfaces. React is often used to build the client-side of web applications.
+
+# Node.js: Node.js is a free open sorce JavaScript runtime envirnoment.  built on Chrome's V8 JavaScript engine. Node.js allows developers to run JavaScript code on the server-side of web applications.
 
 # callBack function =>
 # callback=>

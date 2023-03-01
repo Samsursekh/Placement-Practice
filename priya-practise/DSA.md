@@ -413,3 +413,60 @@ const arr = ["apple", "banana", "orange", "pear", "kiwi"];
 const strings = ["apple", "banana", "cherry", "date", "elderberry"];
 let longest = strings.reduce((accl, curr) => curr.length>accl.length ? curr:accl)
 console.log(longest)
+
+
+# arrange alphabetically ==> 
+
+let array = ["priya", "priti","ganu", "vaishu", "ayna", "riya"]
+let str = array.sort((a,b) => {
+    if(a<b){
+        return -1;
+    }else if(a>b){
+        return 1;
+    }
+})
+console.log(str)
+
+# check palindrome number ==> 
+function checkPalindrome(N, str) {
+    
+   let bag="";
+   for(let p=N-1; p>=0; p--){
+       bag=bag+str[p];
+   }
+   
+   if(str==bag){
+       console.log("Yes");
+   }else{
+       console.log("No");
+   }
+   
+//   console.log(bag);
+}
+
+
+# print the number 100 to 10000 only palindrome
+
+for(let p=100; p<=10000; p++){
+    const str = p.toString();
+   if(str ==str.split("").reverse().join("")){
+    console.log(p)
+   };
+}
+
+# approach 2
+
+function print(p){
+    let str = p+"";
+    return str.split("").reverse().join("");
+}
+
+for(let p=100; p<=1000; p++){
+    if(print(p)){
+        console.log(p)
+    }
+}
+
+
+
+

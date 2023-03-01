@@ -144,11 +144,11 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 # hooks 
 - Hooks allow function components to have access to state and other React features.
 In React, a hook is a function that allows developers to use state and other React features in functional components. 
-- Some common hooks include useState for managing state, useEffect for handling side effects, useContext for consuming context, and useMemo and useCallback for performance optimization. Hooks are designed to be composable and allow developers to easily reuse and share stateful logic across different components.
+- Some common hooks include useState for managing state, useEffect for handling side effects, useContext for consuming context, and useMemo and useCallback for performance optimization. 
+- Hooks are designed to be composable and allow developers to easily reuse and share stateful logic across different components.
 
 # What is useState () in React?
-- The React useState Hook allows us to track state in a function component.
-m
+- The React useState Hook allows us to maintain state in a function component.
 
 # What is useEffect () hook?
 - The useEffect Hook allows you to perform side effects in your components.
@@ -208,9 +208,9 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 
 #  What is Flux Concept In React?
 
-- Facebook widely uses flux architecture concept for developing client-side web
-applications. It is not a framework or a library. It is simply a new kind of architecture
-that complements React and the concept of Unidirectional Data Flow.
+- Facebook widely uses flux architecture concept for developing client-side web applications. 
+- It is not a framework or a library. It is simply a new kind of architecture
+- that complements React and the concept of Unidirectional Data Flow.
 
 - Flux is a programming concept, where the data is uni-directional.
 - This data enters the app and flows through it in one direction until it is rendered on the screen.
@@ -220,7 +220,9 @@ that complements React and the concept of Unidirectional Data Flow.
 
 - Dispatcher − This is a central hub of the app. All the data is dispatched and sent to the stores.
 
-- Store − Store is the place where the application state and logic are held. Every store is maintaining a particular state and it will update when needed.
+- Store − Store is the place where the application state and logic are held.
+
+-  Every store is maintaining a particular state and it will update when needed.
 
 - View − The view will receive data from the store and re-render the app.
 
@@ -270,46 +272,52 @@ A dispatcher is a central hub of app where you will receive actions and broadcas
 - Each React component has a lifecycle that you can monitor and manipulate during its three main phases.	
 The three phases are Mounting, Updating, and Unmounting.
 
-- 1] Mounting 
-- 2] Updating 
-- 3] Unmounting 
+- 1] Mounting - birth
+- 2] Updating - growth
+- 3] Unmounting - death
 
 # Mounting/birth
-- Mounting means putting elements into the DOM.
-
+- Mounting means putting elements into the DOM. 
+- as birth of new component
 - React has four built-in methods that get called, in this order, when mounting a  component:
-- constructor
-- getDerivedStateFromProps()
-- render() 
-- componentDidMount()
+- constructor => render()  => componentDidMount()
+
 
 # Updating/middle
-- A component is updated whenever there is a change in the component's state or props.
-- React has five built-in methods that get called, in this order, when a component is updated:
-
-- getDerivedStateFromProps()
-- shouldComponentUpdate()
-- render()
-- getSnapshotBeforeUpdate()
-- componentDidUpdate()
+- A component is updated whenever there is a change
+- that get called, in this order, when a component is updated
+- render() =>  componentDidUpdate()
 
 
 # Unmounting/end 
 - The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
 - React has only one built-in method that gets called when a component is unmounted:
-
 - componentWillUnmount()
-- The componentWillUnmount method is called when the component is about to be removed from the DOM.
 
-- 1] getIntialState()
-- 2] componentDidNount()
-- 3] shouldComponentUpdate()
-- 4] ComponentDidUpdate()
-- 5] ComponentWillUnmount()
+
+ # life cycles => 
+ - Every component in React goes through a lifecycle of events. 
+ - I like to think of them as going through a cycle of birth, growth, and death.
+
+Mounting – Birth of your component
+Update –  Growth of your component
+Unmount – Death of your component
+ 
+ -  1] The mounting phase is when a new component is created and inserted into the DOM 
+ - 2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when   the state is updated. This phase can occur multiple times, which is kind of the point of React.
+ - 3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
+
+# lifecycle method
+mounting = constructor->render->componentDidMount
+update = render->componentDidUpdate
+unmounting = componentWillUnmount
+
+
 
 # context API
 - React Context is a way to manage state globally. 
-- It can be used together with the useState Hook to share state between deeply  nested components more easily 
+- It can be used together with the useState Hook 
+- to share state between deeply  nested components more easily 
 - It's is better way aviod a prop drilling in react.js 
 
 - ex:  import React, { useContext } from "react";
@@ -328,23 +336,6 @@ const Child = () => {
 export default Child;
 
 
-
- # life cycles => 
- - Every component in React goes through a lifecycle of events. 
- - I like to think of them as going through a cycle of birth, growth, and death.
-
-Mounting – Birth of your component
-Update – Growth of your component
-Unmount – Death of your component
- 
- -  1] The mounting phase is when a new component is created and inserted into the DOM 
- - 2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when the state is updated. This phase can occur multiple times, which is kind of the point of React.
- - 3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
-
-# lifecycle method
-mounting = constructor->render->componentDidMount
-update = render->componentDidUpdate
-unmounting = componentWillUnmount
 
 
 # Prop drilling

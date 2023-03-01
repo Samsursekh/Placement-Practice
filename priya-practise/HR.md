@@ -63,6 +63,17 @@ When I was doing the project I learned a lot. I learned how to develop,  write l
 In the project work, the most challenging part was user direct login with our google account but with my friends' support, I was able to do it. I watched videos online on youtube and talked with my friends to overcome the challenges.
 
 
+# 1] about project , full responsive
+# 2] objective of projcet 
+# 3] collbravtive project , temametes
+# 4] area of responsibllity
+# 5] teachnical stack , external css library 
+# 6] most challengining part authentication using forebase
+
+# admin 
+
+
+
 # Explain way⇒
 Navbar horizontal, vertical
 Homepage, footer

@@ -1,8 +1,5 @@
 # create a counter app manage state using redux
 
-As an AI language model, I do not have the ability to provide a fully functional app with a UI, but I can provide a basic outline of how to create a counter app using Redux to manage state.
-
-
 Set up the Redux store
 Create a new file for the store
 Import createStore from the redux library

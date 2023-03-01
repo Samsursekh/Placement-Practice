@@ -1,74 +1,89 @@
-# what is node js?
-- Node.js is an open-source, cross-platform, server-side runtime environment that allows developers to build fast and scalable network applications with JavaScript. 
-- It is built on the V8 JavaScript engine, which is used in Google Chrome, and provides an event-driven, non-blocking I/O model that makes it ideal for building real-time applications and APIs.
--  Node.js offers a rich set of modules and libraries that help developers build a wide range of applications, from simple command-line tools to complex web applications. 
-- It is widely used for developing server-side applications, microservices, and APIs, and has become an essential tool for modern web development.
 
-# how to deploy your mern projcet?
-Choose a hosting service: Select a hosting service provider like AWS, Heroku, or Digital Ocean.
-Create a production build: Create a production-ready build of your MERN project using the npm run build command.
-Set up the server: Set up your server, including installing any dependencies and setting environment variables.
-Deploy your code: Upload the production build to your server or hosting provider.
-Run your server: Start your server by running the command for your specific hosting service.
-Verify deployment: Test your deployment by visiting the URL of your server and making sure everything is working as expected.
-Note: Before deploying, make sure to thoroughly test your application to ensure it works properly in a production environment.
 
+# what is firebase ?
+
+ # MVC pattent vs flux pattern in data flow explain?
+ 
+// # what is repl in node.js ==>
+
+// r => read 
+// E => evulate
+// p => print 
+// l => loop
+
+// value is right or wrong your loop is running evulate and print process stay continue 
+// this is not a for loop or while loop 
+
+// # express js => 
+
+// - express is framework of node.js.
+
+// # mongoDB ==> 
+// - mongodb is noSql database 
+// - the data stored in a collection 
+// - collection don't have row and column 
+// - data is stored in the form of object 
 
 # what are the collections in mongodb?
+- A collection is a set of document 
 - A collection in MongoDB is a group of documents.
 
 - Collections in a NoSQL database like MongoDB correspond to tables in relational database management systems (RDBMS) or SQL databases.
 
 - In general, we recommend limiting collections to 10,000 per replica set. When users begin exceeding 10,000 collections, they typically see decreases in performance.
 
-#  what are javascript considered as single threaded language
+table--> rows
+collection -->
+array.object ==> key-value pair ==> document 
 
-- JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
-- The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
+# what is differene between mongodb and sql database?
+SQL databases are used to store structured data while NoSQL databases like MongoDB are used to save unstructured data. MongoDB is used to save unstructured data in JSON format. MongoDB does not support advanced analytics and joins like SQL databases support
 
-# Why node JS is a single threaded language?
+# Why use MongoDB instead of SQL?
+Why is using MongoDB better than using MySQL? Organizations of all sizes are adopting MongoDB, especially as a cloud database, because it enables them to build applications faster, handle highly diverse data types, and manage applications more efficiently at scale.
 
-- A Node. js application runs on single thread and the event loop also runs on the same thread. Hence, we can say Node. js is single-threaded but the catch is that there are some libraries in Node.
+# Which database is fastest?
+MongoDB is suitable for hierarchical data storage and is almost 100 times faster than Relational Database Management System (RDBMS).
 
-- It follows Single Threaded with Event Loop Model. Node JS Processing model mainly based on Javascript Event based model with Javascript callback mechanism.
+# What is indexing in node js?
+Indexes are data structures that support the efficient execution of queries in MongoDB. They contain copies of parts of the data in documents to make queries more efficient. Without indexes, MongoDB must scan every document in a collection to find the documents that match each query.
 
-# what is middleware? explain with an example
-- Middleware is software and cloud services that provide common services and capabilities to applications and help developers and operators build and deploy applications more efficiently.
+# what is difference between DBMS and RDBMS? 
+DBMS stands for Database Management System, which is a software system used to manage and organize data in a database. It allows users to define, create, update, and manage databases efficiently. DBMS can manage both structured and unstructured data.
 
--  Middleware acts like the connective tissue between applications, data, and users.
+RDBMS stands for Relational Database Management System. It is a type of DBMS that stores and organizes data in the form of related tables. In RDBMS, data is structured in the form of rows and columns, where each row represents a unique record and each column represents a specific attribute of that record. RDBMS uses SQL (Structured Query Language) for managing data.
 
-- ex: a web server is middleware that connects websites to the backend database. 
-- When you submit a form on a website, your computer sends the request in XML or JSON to the web server.
+The main difference between DBMS and RDBMS is that DBMS manages data in a more general and flexible way, whereas RDBMS manages data in a structured way using tables and relations. RDBMS is designed to handle large amounts of structured data and provide powerful querying and reporting capabilities. In contrast, DBMS can handle both structured and unstructured data, but it may not have the same level of performance and scalability as RDBMS when dealing with large amounts of structured data.
 
-- API management are all commonly handled by middleware. 
+# what is long pulling?
 
-# what is middleware ? 
+Long polling is a technique used in web development to improve the efficiency of client-server communication. It is a variation of the traditional polling technique, which involves repeatedly sending requests to the server to check for new data.
 
-- Middleware is software and cloud services that provide common services and capabilities to applications and help developers and operators 
-- Middleware is software that different applications use to communicate with each other. It provides functionality to connect applications intelligently and efficiently so that you can innovate faster. Middleware acts as a bridge between diverse technologies, tools, and databases so that you can integrate them seamlessly into a single system. The single system then provides a unified service to its users. For example, a Windows frontend application sends and receives data from a Linux backend server, but the application users are unaware of the difference.
+In long polling, the client sends a request to the server, but the server does not respond immediately. Instead, the server holds the request open until new data becomes available or a timeout occurs. When new data is available, the server sends a response to the client, which then initiates a new long-polling request.
 
-# Why is middleware important?
-Middleware started as a bridge between new applications and legacy systems before it gained popularity in the 1980s. Developers initially used it to integrate new programs with earlier systems without rewriting the earlier code. Middleware has become an important communication and data management tool in distributed systems.
-
-Developers use middleware to support application development and simplify design processes. This leaves them free to focus on business logic and features instead of connectivity between different software components. Without middleware, developers would have to build a data exchange module for each software component that connects to the application. This is challenging because modern applications consist of multiple microservices or small software components that talk to each other.
-
-# what is firebase ?
-
- # MVC pattent vs flux pattern in data flow explain?
+Long polling is useful in situations where real-time updates are required, such as chat applications or social media feeds. It can reduce the number of requests sent by the client and the amount of data sent by the server, resulting in faster and more efficient communication between the client and server.
 
 
+
+# what is REPL?
+In Node.js, REPL stands for Read-Eval-Print-Loop. It is a built-in feature of Node.js that allows you to interact with the Node.js environment through a console-like interface.
+
+REPL provides a way to enter and run Node.js commands interactively. You can use it to quickly test out code snippets, experiment with new features, and debug your code. It's particularly useful for exploring and learning the Node.js API.
+
+To start a Node.js REPL session, you can simply open a terminal and type node followed by pressing enter. This will start the Node.js environment and bring up the REPL prompt, where you can enter JavaScript code.
+
+For example, you could enter console.log('Hello, world!') and press enter, and the REPL will execute the command and print the output to the console.
+
+REPL also provides several built-in commands, such as .help, .break, .clear, and .exit, which can help you navigate and use the environment more effectively.
 
 
 # mongo ==> commond shell
+
 - mongo is the command-line shell that connects to a specific instance of monogod.
 
 # mongod ==> database
 - mongod is the Mongo Daemon it's basically the host process for the database.
 
-
-table--> rows
-collection -->
-array.object ==> key-value pair ==> document 
 
 ### database related coomands ==>
 
@@ -93,7 +108,7 @@ array.object ==> key-value pair ==> document
 ### mongodb commends related to ROws ==>
 
 1]insert the data ==>
- db.comments.insert({"name": "priya""lang" : "javascript""book" : "karma""Author" : priya reddy"})
+ db.comments.insert({"name": "priya","lang" : "javascript","book" : "karma","Author" :"priya reddy"})
 
 2] Insert Many Rows ==>
  db.comments.insertMany([
