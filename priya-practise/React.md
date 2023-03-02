@@ -109,16 +109,16 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - Avoiding Inline Function Definition in the Render Function.
 - Throttling and Debouncing Event Action in JavaScript
 - Avoid using Index as Key for map
--  Avoiding Props in Initial States
+- Avoiding Props in Initial States
 - Spreading props on DOM elements
 - CSS Animations Instead of JS Animations
 
 # what is component in react? 
 - A component is basically a piece of the user interface.
-- A component id basically piece of the code. 
+- A component is basically piece of the code. 
 
 # 4] what is component in react? difference between functional component and class component?
-- there are two types of components 
+-    there are two types of components 
 - 1] Functional component / representional Component
 - 2] Class component
 - A component is an independent, reusable bit of code which divides the UI into smaller pieces

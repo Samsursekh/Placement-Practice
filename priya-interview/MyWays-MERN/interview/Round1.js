@@ -17,7 +17,7 @@
 
 
 import "./styles.css";
-import { useState} from 'react'
+import { useState, useEffect} from 'react'
 
 export default function App() {
 
@@ -26,18 +26,20 @@ export default function App() {
   async function getData(){
     let res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
     let data = await res.json();
-    console.log(data)
-     setCount(data)
+    // console.log(data)
+     setData(data)
   }
 
+  let fdata = data.filter((e) => e.id==22)
 
-  getData()
+  useEffect(() => {
+    getData()
+  },[])
 
   return (
     <div className="App">
-      <div id="container">
         {
-          count?.map((e,) =>  <div>
+          fdata?.map((e) =>  <div>
               <p>{e.title}</p>
               <p>{e.id}</p>
               <p>{e.body}</p>
@@ -46,7 +48,5 @@ export default function App() {
         }
 
         </div>
-      
-    </div>
   );
 }
