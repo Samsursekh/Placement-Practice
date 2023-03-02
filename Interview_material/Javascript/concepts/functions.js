@@ -50,3 +50,7 @@ a(person); // function as argument
 let s = () => {
   console.log("arrow function");
 };
+
+
+
+// IIFE functions
