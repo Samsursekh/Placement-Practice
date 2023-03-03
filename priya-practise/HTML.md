@@ -23,10 +23,10 @@ Use: Cookies are often used to store user preferences or login information, whil
 
 Overall, the choice between local storage, session storage, and cookies depends on the specific use case and the type of data that needs to be stored.
 
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
- wishlist.push(e)
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || []; 
+wishlist.push(e)
  
-localStorage.setItem('wishlist', JSON.stringify(wishlist))
+localStorage.setItem('wishlist', JSON.stringify(wishlist)) 
 
 # 1] semantic tags =>
 
@@ -46,40 +46,37 @@ localStorage.setItem('wishlist', JSON.stringify(wishlist))
     - <time> 	Defines a date/time
     
     # 21. What is the role of DOCTYPE in HTML5?
-    - All HTML pages (HTML5 included) need to have their document type declared in the first line of code.
+    -  All HTML pages (HTML5 included) need to have their document type declared in the first line of code.
     -  DOCTYPE instructs the browser how to interpret the document by indicating what type and version of markup language are being used.
-    - For HTML5 documents, the following DOCTYPE declaration code is used: 
+    -  For HTML5 documents, the following DOCTYPE declaration code is used: 
     - <!DOCTYPE html>
     
     # 23. What is metadata in HTML5 and how is it specified?
-    - Metadata is data that describes other data, providing additional information about an HTML document. Its purpose is to help browsers, search engines and other web applications better interpret a document. Examples of metadata include the description, author, and keywords.
+    - Metadata is data that describes other data, providing additional information about an HTML document. Its purpose is to help    browsers, search engines and other web applications better interpret a document. Examples of metadata include the description, author, and keywords.
     - The <meta> tag is used to define metadata about an HTML document. 
     - <meta> tags are always enclosed within the <head> of the HTML document.
-
+    
 
     # 2] how you structure? 
 
-    <!DOCTYPE html>  //This is a declaration to show the document type;
-    <html> //This shows the start and end of the HTML file
-    <head> //head portion of the document which contains information related to the document.
-    <title>tab name</title> //This defines the title of the webpage, to be displayed on the tab of a web browser
-    <link rel="stylesheet" href="style.css"> //The <link> tag defines the relationship between the current document and an external resource.
+    <!DOCTYPE html>  // This is a declaration to show the document type;
+    <html> // This shows the start and end of the HTML file
+    <head> // head portion of the document which contains information related to the document.
+    <title>tab name</title> // This defines the title of the webpage, to be displayed on the tab of a web browser
+    <link rel="stylesheet" href="style.css"> // The <link> tag defines the relationship between the current document and an external resource.
     </head>
     <body> 
-
     // a body, which contains the document's actual content. 
-
     </body>
     </html>
 
    # 22. What are the different types of storage in HTML5?
     - HTML5 supports two types of web storage. These are:
-    - 1] sessionStorage: temporary storage available for the duration of the page session
-    - 2] localStorage: permanent storage available until data is deleted by the user
+     1] sessionStorage: temporary storage available for the duration of the page session
+     2] localStorage: permanent storage available until data is deleted by the user
+     3] cookies => 
 
-    - 3] cookies => 
-
-    # 6] What is CSS and what is its relationship with HTML5?
+     6] What is CSS and what is its relationship with HTML5?
     - CSS, or Cascading Style Sheet, is a style sheet language used with HTML5 to format and display the elements specified by the markup language for the end user. While HTML5 defines the structure of a page, CSS specifies the document’s style, including page layout, colors, and fonts. 
 
 
@@ -106,6 +103,7 @@ localStorage.setItem('wishlist', JSON.stringify(wishlist))
 - The anchor tag, or <a> tag in code, is used with the ‘href’ attribute to link to other web pages. The URL and linked text are both included in the element.
 For example, a link to the Google homepage would look like this in HTML5 code:
 <a href="http://www.google.com/">Google Search Engine</a>
+
 
 # 12. What are the three types of lists in HTML5?
 - The three types of HTML5 lists are: 

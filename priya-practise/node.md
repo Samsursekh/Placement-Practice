@@ -88,3 +88,40 @@ Content Type: in request header: to specify what kind of data
 we are sending to the server 
 
 in response header: what was the contenttype we got as response 
+
+# what is difference between single threded and multi threaded?
+Single-threaded refers to a programming model or application where only one thread of execution is active at a time. This means that only one sequence of instructions is being executed by the CPU at any given moment. In a single-threaded program, all tasks must be performed sequentially, one after the other, which can lead to slower execution times, especially when performing complex tasks.
+
+On the other hand, multi-threaded programming allows an application to perform multiple tasks concurrently, using multiple threads of execution. This means that different parts of the application can execute simultaneously, improving the overall performance and responsiveness of the program. By breaking up complex tasks into smaller sub-tasks that can be executed concurrently, a multi-threaded application can complete tasks faster and more efficiently than a single-threaded one.
+
+In summary, the main difference between single-threaded and multi-threaded programming is that single-threaded programs can only execute one sequence of instructions at a time, while multi-threaded programs can execute multiple sequences of instructions concurrently.
+
+# what is difference between sql and mysql database
+
+SQL stands for Structured Query Language and is a programming language used to manage relational databases. It provides a standard way to create, read, update, and delete data from databases. SQL is used by many different database systems, including MySQL.
+
+MySQL is a specific type of database management system that uses SQL as its programming language. MySQL is an open-source relational database management system that is widely used for web applications, content management systems, and other software that requires a database. It is compatible with many operating systems and programming languages and is known for its high performance and reliability.
+
+In summary, SQL is a programming language used to manage relational databases, while MySQL is a specific type of database management system that uses SQL as its programming language.
+
+
+# what is api  and how to work in backend 
+
+API stands for Application Programming Interface. It is a set of protocols, routines, and tools that allow different software applications to communicate with each other. APIs provide a way for developers to interact with backend services or databases without having to know the details of how those services are implemented.
+
+In the context of backend development, APIs are often used to expose the functionality of a web application to other systems or applications. For example, a backend developer might create an API that allows a mobile app to retrieve user data from a web application. The mobile app would send a request to the API, and the API would return the requested data in a format that the mobile app could use.
+
+To create an API in a backend system, a developer typically follows these steps:
+
+Design the API: This involves deciding on the endpoints that the API will expose, the data formats that will be used, and any authentication or security measures that will be required.
+
+Implement the API: This involves writing the code that handles incoming requests, retrieves data from databases or other services, and formats the response.
+
+Test the API: This involves using tools like Postman or Swagger to send requests to the API and verify that the responses are correct.
+
+Deploy the API: This involves configuring the backend server to expose the API to the outside world, often through a specific URL or endpoint.
+
+Once the API is deployed, it can be used by other systems or applications to interact with the backend service.
+
+
+

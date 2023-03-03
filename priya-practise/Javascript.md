@@ -1,7 +1,9 @@
 
 # difference between call apply bind?
 # what is rest operator?
-The rest operator, represented by three dots ( ... ), allows a function to receive an indefinite number of arguments as an array. It enables the function to capture all remaining parameters that are not assigned to any argument. This operator can be used in functions to accept an arbitrary number of arguments, which makes it a useful tool for creating more flexible and dynamic functions. It is also known as the spread syntax when used to spread the contents of an array or object into another array or object.
+The rest operator, represented by three dots ( ... ), 
+allows a function to receive an indefinite number of arguments as an array. 
+It enables the function to capture all remaining parameters that are not assigned to any argument. This operator can be used in functions to accept an arbitrary number of arguments, which makes it a useful tool for creating more flexible and dynamic functions. It is also known as the spread syntax when used to spread the contents of an array or object into another array or object.
 
 # what is spread operator?
 A spread operator is a syntax in JavaScript that allows an iterable (such as an array or string) to be expanded in places where multiple arguments or elements are expected. It is denoted by the ellipsis (three dots) followed by the name of the iterable. The spread operator can be used in function calls, array literals, and object literals to make it easier to work with collections of data. It creates a copy of the original data and avoids modifying the original object or array.
@@ -48,7 +50,10 @@ Inheritance: Inheritance allows objects to inherit properties and methods from o
 
 Polymorphism: Polymorphism allows objects to take on multiple forms or behaviors. This means that the same method can be used to perform different actions depending on the context in which it is used.
 
+Abstraction is way of hiding complexity. JavaScript Data Abstraction feature is used for hiding internal details and showing the essential features of the object only.
+
 Overall, OOP in JavaScript helps to create code that is easier to manage, understand and maintain, by providing a structured and modular approach to development.
+
 
 #  what are javascript considered as single threaded language
 - JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
@@ -61,6 +66,8 @@ Overall, OOP in JavaScript helps to create code that is easier to manage, unders
 3.  The purpose of "use strict" is to indicate that the code should be executed in "strict mode". 
 4.  With strict mode, you cannot, for example, use undeclared variables. 
 5.  All modern browsers support "use strict" except Internet Explorer 9 and lower 
+
+
 # Why Strict Mode? 
  Strict mode makes it easier to write "secure" JavaScript. 
  Strict mode changes previously accepted "bad syntax" into real errors. 
@@ -88,7 +95,7 @@ The this keyword refers to different objects depending on how it is used:
 and bind() can refer this to any object. 
  
  
-# Q 3 – What are different types in JavaScript? 
+# Q 3 – What are different datatypes in JavaScript? 
 # 1] Primitive datatypes
 - 1] Number: This data type is used to store numeric values, including integers, floats, and decimals. For example, 5, 3.14, -10, etc.
 - 2] Null: This data type is used to represent a variable that has no value. For example, var x = null;

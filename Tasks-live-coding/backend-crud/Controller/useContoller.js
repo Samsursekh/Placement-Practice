@@ -1,6 +1,5 @@
 const tasks = require('../model/usermodel')
 
-
 exports.postFunction = async(req, res) => {
  const {title, desc, price} = req.body 
 
@@ -9,9 +8,7 @@ exports.postFunction = async(req, res) => {
       res.status(200).json(taskData);
  }catch(error){
     console.log(error)
-
  }
-
 }
 
 exports.getFunction  = async(req, res) => {
@@ -37,7 +34,6 @@ exports.getSingleFunction = async(req, res) => {
       
    }
 }
-
 
 exports.updateFunction = async(req, res)=> {
    const {id} = req.params;

@@ -9,11 +9,17 @@
 # what is the difference between redux and context api?
 
 # what is useMemo?
-useMemo is a React Hook that lets you cache the result of a calculation between re-renders.
-useMemo is a built-in React hook that is used for performance optimization by caching the result of a function call and returning it when the input values to that function have not changed. This helps to prevent unnecessary re-rendering of components that depend on the output of that function. It takes two arguments: a function that returns the value to be cached, and an array of dependencies that determines when the function should be recomputed. If the dependencies have not changed, the cached value is returned, otherwise the function is re-executed and the new value is cached. It is commonly used for expensive calculations or when the output of a function is used in multiple places within a component.
+- useMemo is a React Hook that  cache the value between re-renders.
+- useMemo is a built-in React hook that is used for performance optimization 
+- his helps to prevent unnecessary re-rendering of components that depend on the output of that function.
+
+by caching the result of a function call and returning it when the input values to that function have not changed. T It takes two arguments: a function that returns the value to be cached, and an array of dependencies that determines when the function should be recomputed. If the dependencies have not changed, the cached value is returned, otherwise the function is re-executed and the new value is cached. It is commonly used for expensive calculations or when the output of a function is used in multiple places within a component.
 
 # what is useCallback hook?
-useCallback is a React Hook that is used to optimize the performance of functional components. It is used to memoize a function and prevent it from being re-created on each re-render of the component. By memoizing the function, the component can avoid unnecessary re-renders and improve its performance.
+
+- useCallback is a React Hook that is used to optimize the performance of functional components. 
+- useCallback is a built-in React hook that is used for performance optimization 
+- By memoizing the function, the component can avoid unnecessary re-renders and improve its performance.
 
 When a component that uses the useCallback hook re-renders, it will return the same memoized function instance unless any of its dependencies have changed. If any of the dependencies have changed, then the hook will create a new function instance and return it.
 
@@ -35,6 +41,24 @@ The useCallback hook is often used in conjunction with the useMemo hook to optim
 3. Object allocates memory space whenever they are created.
 4. You can create more than one object using a class.
 5. Objects provide life to the class.  
+
+  Higher order component,
+ virtual dom, 
+ react fragment, 
+ usememo,
+  reactmemo
+
+Fetch api show to console
+[ Like what is react
+
+
+
+
+
+3:03
+What is state managemet
+3:03
+What is the lifecycle of react
 
 # how to manage a state?
 
@@ -67,11 +91,11 @@ The state of a component in React is an object that holds information about the 
 
 
 # Does React use HTML? 
-No, It uses JSX, which is similar to HTML.
+- No, It uses JSX, which is similar to HTML.
 
 
 # what is JSX?
-JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
+ - JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
 
 
 # Advantages of React.JS / Name the important features of React
@@ -131,7 +155,7 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - solution without using state 
 - stateless component 
 - mainly responsible for UI 
-- use functional component easy 
+- using functional component easy 
 
 # class component => 
 - more feature rich 
@@ -139,7 +163,6 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - Has complex UI logic 
 - Provide lifecycle hook 
 - stateful component 
-
 
 # hooks 
 - Hooks allow function components to have access to state and other React features.
@@ -157,13 +180,15 @@ In React, a hook is a function that allows developers to use state and other Rea
  # What is useRef () hook?
 - useref hooks  used to manipulate dom directly 
  - The useRef Hook allows you to persist values between renders. 
- - It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
+ - It can be used to store a mutable value that does not cause a re-render when updated.
+  It can be used to access a DOM element directly.
 
 # what is higher order component?
 - A higher-order component acts as a container for other components.
+- reusing component logic 
 
-# Explain the term stateless components
-- Stateless components are pure functions that render DOM-based solely on the properties provided to them.
+# Explain the term stateless components 
+- Stateless components are pure functions that render DOM-based on the properties provided to them.
 - A stateless function component is a typical React component that is defined as a function that does not manage any state.
 
 # What is DOM?
@@ -221,7 +246,6 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 - Dispatcher − This is a central hub of the app. All the data is dispatched and sent to the stores.
 
 - Store − Store is the place where the application state and logic are held.
-
 -  Every store is maintaining a particular state and it will update when needed.
 
 - View − The view will receive data from the store and re-render the app.
@@ -299,13 +323,13 @@ The three phases are Mounting, Updating, and Unmounting.
  - Every component in React goes through a lifecycle of events. 
  - I like to think of them as going through a cycle of birth, growth, and death.
 
-Mounting – Birth of your component
-Update –  Growth of your component
-Unmount – Death of your component
+    Mounting – Birth of your component
+    Update –  Growth of your component
+    Unmount – Death of your component
  
  -  1] The mounting phase is when a new component is created and inserted into the DOM 
- - 2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when   the state is updated. This phase can occur multiple times, which is kind of the point of React.
- - 3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
+ -  2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when   the state is updated. This phase can occur multiple times, which is kind of the point of React.
+ -  3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
 
 # lifecycle method
 mounting = constructor->render->componentDidMount
@@ -340,10 +364,11 @@ export default Child;
 
 # Prop drilling
 Prop drilling is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.
-
+- passing props in nested components
 
 # Async ops =>
-- Async-Ops is a library for performing   a   asynchronous service calls in Redux applications. - Async-Ops is made for use with Redux-Sagas.
+- Async-Ops is a library for performing   a   asynchronous service calls in Redux applications.
+ - Async-Ops is made for use with Redux-Sagas.
 - async is that function always returns a promise.
 
 

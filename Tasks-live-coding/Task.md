@@ -2,10 +2,11 @@
 # create the timer on codesandbox?  [completed]
 # create a stopwatch with start pause and reset button ? [completed]
 # create a from and show thd  data in your database  display in on screen including as well as images? [completed]
-# create a todo application functionallity create, delete , edit
-# create a counter app manage state using redux
+# create a todo application functionallity create, delete , edit [complete]
 # create a array of object ? and map data in react? [completed]
 # write a code to genrate a random number[completed]
+# backend crud [complete]
+
 
 const randomNumber = Math.floor(Math.random() * 10) + 1;
 console.log(randomNumber);
@@ -56,6 +57,7 @@ function handleClick(){
 # create a react app such that button click the background color should be  changes randomly?
 # create is accordion?
 # tic- tac-app 
+# create a counter app manage state using redux
 
 
 
