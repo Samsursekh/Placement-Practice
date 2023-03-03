@@ -67,7 +67,7 @@ The state of a component in React is an object that holds information about the 
 
 
 # Does React use HTML? 
-No, It uses JSX, which is similar to HTML.
+ No, It uses JSX, which is similar to HTML.
 
 
 # what is JSX?
@@ -123,7 +123,7 @@ JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes i
 - 2] Class component
 - A component is an independent, reusable bit of code which divides the UI into smaller pieces
 - Components are independent and reusable bits of code.
-- They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, 
+- They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components.
 
 # functional component =>
 - simple function / pure function 
@@ -161,6 +161,9 @@ In React, a hook is a function that allows developers to use state and other Rea
 
 # what is higher order component?
 - A higher-order component acts as a container for other components.
+  A higher-order component (HOC) is an advanced technique in React for reusing component logic.
+   They are a pattern that emerges from React’s compositional nature.
+   a higher-order component is a function that takes a component and returns a new component.
 
 # Explain the term stateless components
 - Stateless components are pure functions that render DOM-based solely on the properties provided to them.
@@ -190,7 +193,7 @@ DOM stands for Document Object Model it is the structural representation of all 
 
 React uses Virtual DOM, which can be thought of as a blueprint of the DOM. 
 
-- It can't update HTML directly
+- It can't update HTML directly.
 - Update the JSX if the element update
 - DOM manipulation is very easy 
 - No memory wastage 
@@ -249,7 +252,6 @@ software application. All information retrieved by the Store is produced by the 
 - In Redux, action creators simply return an action object and pass the argument value if necessary.
 
 
-
 # Explain React Router / why do you need Routing in React?
 - Because we make SPA's (single page Application) in React
 - React Router is a routing library which allows you to add new screen flows to your application, 
@@ -290,7 +292,7 @@ The three phases are Mounting, Updating, and Unmounting.
 
 
 # Unmounting/end 
-- The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
+- The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React     likes to call it.
 - React has only one built-in method that gets called when a component is unmounted:
 - componentWillUnmount()
 
@@ -343,7 +345,7 @@ Prop drilling is a situation where data is passed from one component through mul
 
 
 # Async ops =>
-- Async-Ops is a library for performing   a   asynchronous service calls in Redux applications. - Async-Ops is made for use with Redux-Sagas.
+- Async-Ops is a library for performing  a  asynchronous service calls in Redux applications. - Async-Ops is made for use with Redux-Sagas.
 - async is that function always returns a promise.
 
 

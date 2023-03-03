@@ -48,9 +48,12 @@ Inheritance: Inheritance allows objects to inherit properties and methods from o
 
 Polymorphism: Polymorphism allows objects to take on multiple forms or behaviors. This means that the same method can be used to perform different actions depending on the context in which it is used.
 
+Abstraction : is way of hiding complexity. JavaScript Data Abstraction feature is used for hiding internal details and showing the essential features of the object only.
+
 Overall, OOP in JavaScript helps to create code that is easier to manage, understand and maintain, by providing a structured and modular approach to development.
 
 #  what are javascript considered as single threaded language
+
 - JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
 - The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
 
