@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>IWCN JAVASCRIPT</h1>
+</body>
+</html>
+<script>
+
+
+// // 1] 
+
+// function main(){
+//     let sum = 0; 
+//     let i=10;
+//     while(i<1){
+//         sum=sum+i;
+//         sum=sum+2;
+//         i-=1;
+//     }
+//     console.log(sum);
+// }
+// main()       
+// //ans ==> 0
+
+
+// //2] 
+// function map(array, method){
+//     let resultArray =[]
+//         array.forEach(element  => {
+//             //call the method on object 
+//             const value = method(element)
+//             //missing line
+// if(array[i]===element){
+//     return i
+// }
+//             return value;
+//         }) 
+//         return resultArray;
+// }
+
+
+// //5] 
+
+// const f = n => n<=1 ? 1 : n * f(n-1);
+// let g = f(4);
+// console.log(g)  //24
+
+// 7] 
+ 
+// function _(arr){
+//     let temp = 0 ;
+//     for(const x of arr){
+//         if(x%2 ==1){
+//             temp+=1;
+//         }else{
+//             temp=0;
+//         }
+//         if(temp ==3){
+//             return true;
+//         }
+//     }return false;
+// }
+
+
+// //8] 
+// function is_prime_number(num){
+//     let j=1
+//     while(j*j<=num){
+//         if(num%j===0){
+//            return false;
+//         }
+//         j++;
+//     }
+//       return false;
+// }
+// is_prime_number(num)
+
+// //11]
+// function deleteBlankItems(items){
+//     for(var i=0; i<items.length; i++){
+//         if(items[i].length ==0){
+//             console.log(names)
+//             items.splice(i,1);
+//             // console.log(names)
+            
+//         }
+        
+//     }
+// }
+// var names = ['Rachel', "", 'meghana', " ","", 'tim']
+// deleteBlankItems(names)   
+// // ans ==>['Rachel', 'meghana', ' ', '', 'tim']
+
+
+function f1(a){
+    if(a===0) return 1
+    return a*f1(a-1)
+}
+function main(){
+   
+    const f2 = (a,b) => Math.abs(2*a-3*b)
+    console.log(f1(f2((2,3))))
+    console.log(2(5((2,3))))
+}  
+
+// main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

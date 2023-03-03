@@ -48,7 +48,7 @@ In Node. js, process. env is a global variable injected during runtime. It is a 
 - code and syntax is very simillar to javascript 
 - but not exactly the same 
 - node js free open sourse 
-- node is use chrome  v8 engine to excute code 
+- node is use chrome v8 engine to excute code 
 
 # why do we use node ?
 - Node js mostly used for API 
@@ -63,6 +63,7 @@ In Node. js, process. env is a global variable injected during runtime. It is a 
 
 
 # what are client and server side?
+
 client ==>  requset ==> server 
 client <== requset <== server 
 cliend side ==>javascript html css dispay on browser
@@ -71,13 +72,19 @@ cliend side ==>javascript html css dispay on browser
 It means connectivity. 
 I mean API is the messenger that takes requests and 
 tells a system what you want to do and then returns the response back to you
+
 What is JSON? JavaScript Object Notation 
 It's a key value pair. its popular light-weight way of transferring data
+
 What is Postman is a Client tool to work with APIs 
 to send requests get response. Organize the requests  
 Collection in Postman is a top level folder 
+
 Header: exists in both request and response, 
+
 is metadata about the request. It's a key value pair 
+
 Content Type: in request header: to specify what kind of data 
 we are sending to the server 
+
 in response header: what was the contenttype we got as response 
