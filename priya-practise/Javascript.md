@@ -125,7 +125,7 @@ So, NaN is JavaScript stands for Not a Number and typeof(NaN) is a “number”
 There are some side effects checking if NaN is equal to NaN, so to avoid that we can make use of 
 Object.is() 
 Method to check if the two values are same. 
- 
+
 Object.is(NaN,NaN) 
  
 It is helpfull because it covers even the corner cases like -0 === 0 // true (which should be false in 
@@ -227,7 +227,7 @@ var printRandom = function () {
  
 Hoisting is a weird concept in JavaScript. It makes code unreadable and unpredictable. Hence, we 
 should refrain from using it whenever possible by using the above methods.
-# 11] what is difference for and forEach loop 
+# 1] what is difference for and forEach loop 
 # 1] what is AJAX 
 # 2] what is Jquery 
 
@@ -236,7 +236,7 @@ should refrain from using it whenever possible by using the above methods.
 - whenerver you calling a function whaterveer you put over here is known as arguments
 
 
-#  function statement / function decleration 
+# function statement / function decleration 
 
 - function declartion is that a way of declare funaction 
 
@@ -289,10 +289,8 @@ function a() => {
 }
 
 
-
-
 # callBack function =>
-- callbackfunction is that passed a function inside a  another function as an argument 
+- callbackfunction is that passed a function inside a another function as an argument 
 - A callback is a function passed as an argument to another function. This technique allows a function to call another function. A callback function can run after another function has finished.
 
 - ex ==> 
@@ -410,7 +408,7 @@ What is Promise?
  console.log(value));
 
 
-# what are the closures with examples 
+# what are the closures with examples
 
 - closures is that the function bundled together with lexical envirnoment is known as closures 
 
