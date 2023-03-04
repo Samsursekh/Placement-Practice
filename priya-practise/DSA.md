@@ -468,7 +468,16 @@ for(let p=100; p<=1000; p++){
     }
 }
 
-# reove duplicate element 
+# replace specific keyword with *** element 
 
+let str = "The dog is a pet animal. A dog has sharp teeth so that it can eat flesh very easily, it has four legs, two ears, two eyes, a tail, a mouth, and a nose. It is a very clever animal and is very useful in catching thieves. It runs very fast, barks loudly and attacks the strangers. A dog saves the life of the master from danger. One can find dogs everywhere in the world. Dogs are a very faithful animal. It has a sharp mind and a strong sense of hearing smelling the things. It also has many qualities";
 
+str = str.replace(/dog|cat/gi, '***');
+console.log(str);
 
+# tell the output ==> 
+
+// console.log(10+10+20)
+// console.log("10"+10+20)
+// console.log(10+"10"+20)
+// console.log(10+10+"20")
