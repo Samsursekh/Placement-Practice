@@ -50,11 +50,7 @@ Inheritance: Inheritance allows objects to inherit properties and methods from o
 
 Polymorphism: Polymorphism allows objects to take on multiple forms or behaviors. This means that the same method can be used to perform different actions depending on the context in which it is used.
 
-<<<<<<< HEAD
 Abstraction is way of hiding complexity. JavaScript Data Abstraction feature is used for hiding internal details and showing the essential features of the object only.
-=======
-Abstraction : is way of hiding complexity. JavaScript Data Abstraction feature is used for hiding internal details and showing the essential features of the object only.
->>>>>>> 95d56e20614f0600ef279b5e6ccfd046ea8a91a8
 
 Overall, OOP in JavaScript helps to create code that is easier to manage, understand and maintain, by providing a structured and modular approach to development.
 

@@ -8,24 +8,7 @@
 
 # what is the difference between redux and context api?
 
-# what is useMemo?
-- useMemo is a React Hook that  cache the value between re-renders.
-- useMemo is a built-in React hook that is used for performance optimization 
-- his helps to prevent unnecessary re-rendering of components that depend on the output of that function.
 
-by caching the result of a function call and returning it when the input values to that function have not changed. T It takes two arguments: a function that returns the value to be cached, and an array of dependencies that determines when the function should be recomputed. If the dependencies have not changed, the cached value is returned, otherwise the function is re-executed and the new value is cached. It is commonly used for expensive calculations or when the output of a function is used in multiple places within a component.
-
-# what is useCallback hook?
-
-- useCallback is a React Hook that is used to optimize the performance of functional components. 
-- useCallback is a built-in React hook that is used for performance optimization 
-- By memoizing the function, the component can avoid unnecessary re-renders and improve its performance.
-
-When a component that uses the useCallback hook re-renders, it will return the same memoized function instance unless any of its dependencies have changed. If any of the dependencies have changed, then the hook will create a new function instance and return it.
-
-The useCallback hook takes two arguments: the function that needs to be memoized, and an array of dependencies that the function relies on. If any of the dependencies change, then the function will be re-created.
-
-The useCallback hook is often used in conjunction with the useMemo hook to optimize the performance of functional components.
 
 # what are classes and object?
 // Class: 
@@ -42,22 +25,16 @@ The useCallback hook is often used in conjunction with the useMemo hook to optim
 4. You can create more than one object using a class.
 5. Objects provide life to the class.  
 
-  Higher order component,
- virtual dom, 
- react fragment, 
- usememo,
-  reactmemo
 
-Fetch api show to console
-[ Like what is react
+# shri interview 
 
-
-
-
-
-3:03
+Higher order component,
+virtual dom, 
+react fragment, 
+usememo,
+reactmemo
+Fetch api show to console Like what is react
 What is state managemet
-3:03
 What is the lifecycle of react
 
 # how to manage a state?
@@ -68,7 +45,7 @@ What is the lifecycle of react
 
 # is it possible to creat a custom hook in react ? yes then how?
 
-# is react a library
+# what is react a library
 
 # what is react-fiber 
 
@@ -82,7 +59,6 @@ What is the lifecycle of react
 The state of a component in React is an object that holds information about the component, including its properties and values. 
 
 
-
 # what is Reactjs?
 - React is a free open JavaScript library that makes building user interfaces easy. 
 - It was developed by Facebook.
@@ -91,11 +67,7 @@ The state of a component in React is an object that holds information about the 
 
 
 # Does React use HTML? 
-<<<<<<< HEAD
 - No, It uses JSX, which is similar to HTML.
-=======
- No, It uses JSX, which is similar to HTML.
->>>>>>> 95d56e20614f0600ef279b5e6ccfd046ea8a91a8
 
 
 # what is JSX?
@@ -187,15 +159,28 @@ In React, a hook is a function that allows developers to use state and other Rea
  - It can be used to store a mutable value that does not cause a re-render when updated.
   It can be used to access a DOM element directly.
 
+  # what is useMemo?
+- useMemo is a React Hook that  cache the value between re-renders.
+- useMemo is a built-in React hook that is used for performance optimization 
+- his helps to prevent unnecessary re-rendering of components that depend on the output of that function.
+
+by caching the result of a function call and returning it when the input values to that function have not changed. T It takes two arguments: a function that returns the value to be cached, and an array of dependencies that determines when the function should be recomputed. If the dependencies have not changed, the cached value is returned, otherwise the function is re-executed and the new value is cached. It is commonly used for expensive calculations or when the output of a function is used in multiple places within a component.
+
+# what is useCallback hook?
+
+- useCallback is a React Hook that is used to optimize the performance of functional components. 
+- useCallback is a built-in React hook that is used for performance optimization 
+- By memoizing the function, the component can avoid unnecessary re-renders and improve its performance.
+
+When a component that uses the useCallback hook re-renders, it will return the same memoized function instance unless any of its dependencies have changed. If any of the dependencies have changed, then the hook will create a new function instance and return it.
+
+The useCallback hook takes two arguments: the function that needs to be memoized, and an array of dependencies that the function relies on. If any of the dependencies change, then the function will be re-created.
+
+The useCallback hook is often used in conjunction with the useMemo hook to optimize the performance of functional components.
+
 # what is higher order component?
 - A higher-order component acts as a container for other components.
-<<<<<<< HEAD
 - reusing component logic 
-=======
-  A higher-order component (HOC) is an advanced technique in React for reusing component logic.
-   They are a pattern that emerges from React’s compositional nature.
-   a higher-order component is a function that takes a component and returns a new component.
->>>>>>> 95d56e20614f0600ef279b5e6ccfd046ea8a91a8
 
 # Explain the term stateless components 
 - Stateless components are pure functions that render DOM-based on the properties provided to them.

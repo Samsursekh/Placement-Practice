@@ -302,6 +302,7 @@ for(let k in obj){
 
  # approach1 =>
 let arr = [1,7,6,4,5,6,7,1,0]
+
 let newarr= new Set(arr)
 console.log(...newarr)
 
@@ -467,6 +468,7 @@ for(let p=100; p<=1000; p++){
     }
 }
 
+# reove duplicate element 
 
 
 

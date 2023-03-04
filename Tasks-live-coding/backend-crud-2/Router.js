@@ -4,14 +4,14 @@ const router = express.Router();
 
 const Controller = require('./Controller/Controller')
 
-router.post('/task/post', Controller.postFunction);
+router.post('/product/post', Controller.postFunction);
 
-router.get('/task', Controller.getFunction);
+router.get('/product', Controller.getFunction);
 
-router.get('/task/:id', Controller.getSingleFunction)
+router.get('/product/:id', Controller.getSingleFunction)
 
-router.patch('/task/update/:id', Controller.updateFunction)
+router.patch('/product/update/:id', Controller.updateFunction)
 
-router.delete('/task/delete/:id', Controller.deleteFunction)
+router.delete('/product/delete/:id', Controller.deleteFunction)
 
 module.exports = router;

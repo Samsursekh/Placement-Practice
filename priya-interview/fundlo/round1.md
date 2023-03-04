@@ -30,14 +30,20 @@ interview time => 3-3-2023 - 7 to 8pm
 
 -- Use Bootstrap Library, reactive and responsive ----- 
 
+# what is sorting, stack, queue
 
 # what is event emitteres 
+
 # what is closures
+
+# what is promise and async await 
+
 # what is setTimeout function
 for(let p=0; p<3; p++){
-    setTimeout(function log(){
+    setTimeout(function log(p){
         console.log(p)
     },1000)
-} 
+}  
+
 
 

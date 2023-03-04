@@ -32,3 +32,5 @@ video link : https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/8852245
 
 notion link : https://vivmagarwal.notion.site/Placement-Preparation-Sessions-01908eb69ddb47aba54569c4cb09cc9f
 
+
+css signup- login template ==> https://freefrontend.com/bootstrap-login-forms/
