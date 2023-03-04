@@ -56,6 +56,6 @@ capable of excecuting js code outside the browser
    
    Types of modules
    ----------------
-   1. Local Modules.  Modules that we create in our applications
+   1. Local Modules.  Modules that we create in our applications.
    2. built-in modules - modules that node.js brovide by default
    3. Third party modules - modules written by other developers that we can use in our application
