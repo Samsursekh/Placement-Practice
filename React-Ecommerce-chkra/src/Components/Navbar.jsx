@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 export default function Navbar() {
-
   return (
-    <div  id="Navbar">
-
-    <Link to="/">
+    <div id="Navbar">
+      <Link to="/">
         <p>HOME</p>
       </Link>
 
@@ -23,7 +21,6 @@ export default function Navbar() {
       <Link to="/login">
         <p>LOGIN</p>
       </Link>
-
     </div>
   );
 }

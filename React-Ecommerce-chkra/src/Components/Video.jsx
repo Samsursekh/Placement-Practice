@@ -9,8 +9,8 @@
 //         <Video src={videovid} loop muted autoplay>
 //          </Video>
 //         <h1>Cogito Ergo Sum</h1>
-     
-// {/* 
+
+// {/*
 // <video className='videoTag' autoPlay loop muted>
 //     <source src={sample} type='video/mp4' />
 // </video> */}
