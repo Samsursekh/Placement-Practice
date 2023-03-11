@@ -37,6 +37,6 @@ flexbox helps you arrange elements in a web page with easeg
   - flex -->  shorthand for <flex-grow><flex-shrink><flex-basix>
 
   - align-self -->default-> 
-  +auto alignment of individual item
+  auto alignment of individual item
 
 
