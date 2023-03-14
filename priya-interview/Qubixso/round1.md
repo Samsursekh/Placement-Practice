@@ -12,7 +12,6 @@
 - Facebook widely uses flux architecture concept for developing client-side web applications. 
 - It is not a framework or a library. It is simply a new kind of architecture
 - that complements React and the concept of Unidirectional Data Flow.
-
 - Flux is a programming concept, where the data is uni-directional.
 - This data enters the app and flows through it in one direction until it is rendered on the screen.
 
@@ -50,20 +49,19 @@ In summary, routing in React involves navigating between different components or
 
 # what is component and how many types of component?
 
-# What is meant by conditional rendering?
-
 #  what is hook? types of hooks?
 
 # what is css module?
 
 
 
+# What is meant by conditional rendering?
 
- Conditional rendering is a term to describe the ability to render different user interface (UI) markup if a condition is true or false. 
+ - Conditional rendering is a term to describe the ability to render different user interface (UI) markup if a condition is true or false. 
 - In React, it allows us to render different elements or components based on a condition. This concept is applied often in the following scenarios: Rendering external data from an API.
 
 #  what is hook? types of hooks?
-Hooks are a function, Hooks allow function components to have access to state and other React features.
+- Hooks are a function, Hooks allow function components to have access to state and other React features.
  ex ==>
  useState,  => maintain the state.
  useEffect, => handling the sideEffects., avoid uncessery rendering 

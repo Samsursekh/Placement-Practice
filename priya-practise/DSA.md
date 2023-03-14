@@ -450,7 +450,8 @@ function checkPalindrome(N, str) {
 
 for(let p=100; p<=10000; p++){
     const str = p.toString();
-   if(str ==str.split("").reverse().join("")){
+    let rev_str = str.split("").reverse().join("");
+   if(str == rev_str){
     console.log(p)
    };
 }
@@ -472,8 +473,29 @@ for(let p=100; p<=1000; p++){
 
 let str = "The dog is a pet animal. A dog has sharp teeth so that it can eat flesh very easily, it has four legs, two ears, two eyes, a tail, a mouth, and a nose. It is a very clever animal and is very useful in catching thieves. It runs very fast, barks loudly and attacks the strangers. A dog saves the life of the master from danger. One can find dogs everywhere in the world. Dogs are a very faithful animal. It has a sharp mind and a strong sense of hearing smelling the things. It also has many qualities";
 
+# approach 1 ==> 
 str = str.replace(/dog|cat/gi, '***');
 console.log(str);
+
+# approach 2 ==>
+
+arr = str.split(" ");
+for(let p=0; p<arr.length; p++){
+    if(arr[p]=="dog" || arr[p]=="cat"){
+        arr[p] = "************"
+    }
+}
+ console.log(arr.join(" "))
+
+ # approach 3 ==> 
+ arr = str.split(" ");
+let check = ["dog", "cat"]
+for(let p=0; p<arr.length; p++){
+    if(check.includes(arr[p])){
+        arr[p] = "************"
+    }
+}
+ console.log(arr.join(" "))
 
 # tell the output ==> 
 
@@ -481,3 +503,54 @@ console.log(str);
 // console.log("10"+10+20)
 // console.log(10+"10"+20)
 // console.log(10+10+"20")
+
+# shri interview 
+let obj1={
+    name:"shridhar",
+    gav:"kerur",
+    address:{
+        place:"chikodi",
+        pincode:23123
+        }
+}   // 123
+// let a=3
+// let b=a
+// a=4
+// console.log(b)  // 3  pass by value
+
+let obj2 = {...obj1} //123
+
+obj1.name="priya"
+obj1.address.place ="latur"
+
+console.log(obj2)  // pass by ref
+
+# quickSort 
+
+const unsortedArr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+const sortedArr = quicksort(unsortedArr);
+console.log(sortedArr);
+
+function quickSort(arr) {
+  if (arr.length <= 1) {
+    return arr;
+  }
+
+  const pivot = arr[Math.floor(arr.length / 2)];
+  const left = [];
+  const right = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < pivot) {
+      left.push(arr[i]);
+    } else if (arr[i] > pivot) {
+      right.push(arr[i]);
+    }
+  }
+
+  return [...quickSort(left), pivot, ...quickSort(right)];
+}
+
+// Example usage
+const myArray = [4, 2, 6, 8, 3, 1, 5, 7];
+console.log(quickSort(myArray)); // [1, 2, 3, 4, 5, 6, 7, 8]

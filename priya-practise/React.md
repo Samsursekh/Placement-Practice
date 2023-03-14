@@ -1,12 +1,42 @@
 # what is memoization?
+
 # what is redux ?
+
 # difference btween shalow copy or deep copy?
+
 # what is the difference between framwork and library
+
 #  explain the flow of redux?
+
 #  how does react work?
+
 # what is the difference between react and redux?
 
 # what is the difference between redux and context api?
+
+# how to manage a state?
+
+# what is difference between contolled components and unctrooled components?
+
+# what is react-router-dom
+
+# is it possible to creat a custom hook in react ? yes then how?
+
+# what is react a library
+
+# library and framework  difference
+# what is dom element and example 
+# what is react-fiber 
+# shri interview 
+
+Higher order component,
+virtual dom, 
+react fragment, 
+difference between usememo and useCallback 
+Fetch api show to console Like what is react
+What is state managemet
+What is the lifecycle of react
+
 
 
 
@@ -25,53 +55,17 @@
 4. You can create more than one object using a class.
 5. Objects provide life to the class.  
 
-
-# shri interview 
-
-Higher order component,
-virtual dom, 
-react fragment, 
-usememo,
-reactmemo
-Fetch api show to console Like what is react
-What is state managemet
-What is the lifecycle of react
-
-# how to manage a state?
-
-# what is difference between contolled components and unctrooled components?
-
-# what is react-router-dom
-
-# is it possible to creat a custom hook in react ? yes then how?
-
-# what is react a library
-
-# what is react-fiber 
-
-# what is eventEmmitors
-
-# what is ref
-
-# what is dom element and example 
-
-# what is state of component in react? 
-The state of a component in React is an object that holds information about the component, including its properties and values. 
-
-
 # what is Reactjs?
 - React is a free open JavaScript library that makes building user interfaces easy. 
-- It was developed by Facebook.
+- It was developed by Facebook.- Fully supported by Facebook.
 - It is single page page application
 - It is cross platform open sourse library
-
-
-# Does React use HTML? 
-- No, It uses JSX, which is similar to HTML.
-
+- React does not uses html it  uses JSX, which is similar to HTML.
 
 # what is JSX?
- - JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.
+-  React does not uses html it  uses JSX, which is similar to HTML.
+ - JSX stands for JavaScript XML. JSX allows us to write HTML in React. 
+ - JSX makes it easier to write and add HTML in React.
 
 
 # Advantages of React.JS / Name the important features of React
@@ -100,10 +94,9 @@ The state of a component in React is an object that holds information about the 
 - Problems with SEO
 - JSX as a barrier
 
-
 # optimization techniques in react js
 
-- Using Stateless Components and React.
+- Using Stateless Components in React.
 - Using Production Mode Flag in Webpack.
 - Implementing Dependency optimization Using React.
 - Avoiding Inline Function Definition in the Render Function.
@@ -120,10 +113,11 @@ The state of a component in React is an object that holds information about the 
 # 4] what is component in react? difference between functional component and class component?
 -    there are two types of components 
 - 1] Functional component / representional Component
-- 2] Class component
+- 2] Class component 
 - A component is an independent, reusable bit of code which divides the UI into smaller pieces
 - Components are independent and reusable bits of code.
-- They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components.
+- They serve the same purpose as JavaScript functions, but work in isolation and return HTML. 
+- Components come in two types, Class components and Function components.
 
 # functional component =>
 - simple function / pure function 
@@ -140,9 +134,12 @@ The state of a component in React is an object that holds information about the 
 - Provide lifecycle hook 
 - stateful component 
 
+# what is state of component in react? 
+The state of a component in React is an object that holds information about the component, including its properties and values. 
+
 # hooks 
 - Hooks allow function components to have access to state and other React features.
-In React, a hook is a function that allows developers to use state and other React features in functional components. 
+- In React, a hook is a function that allows developers to use state and other React features in functional components. 
 - Some common hooks include useState for managing state, useEffect for handling side effects, useContext for consuming context, and useMemo and useCallback for performance optimization. 
 - Hooks are designed to be composable and allow developers to easily reuse and share stateful logic across different components.
 
@@ -155,9 +152,13 @@ In React, a hook is a function that allows developers to use state and other Rea
 
  # What is useRef () hook?
 - useref hooks  used to manipulate dom directly 
- - The useRef Hook allows you to persist values between renders. 
- - It can be used to store a mutable value that does not cause a re-render when updated.
-  It can be used to access a DOM element directly.
+- The useRef Hook allows you to persist values between renders. 
+- It can be used to store a mutable value that does not cause a re-render when updated.
+- It can be used to access a DOM element directly.
+
+# what is useContext hook ?
+- React Context is a way to manage state globally.
+-  It can be used together with the useState Hook to share state between deeply nested components more easily 
 
   # what is useMemo?
 - useMemo is a React Hook that  cache the value between re-renders.
@@ -167,10 +168,9 @@ In React, a hook is a function that allows developers to use state and other Rea
 by caching the result of a function call and returning it when the input values to that function have not changed. T It takes two arguments: a function that returns the value to be cached, and an array of dependencies that determines when the function should be recomputed. If the dependencies have not changed, the cached value is returned, otherwise the function is re-executed and the new value is cached. It is commonly used for expensive calculations or when the output of a function is used in multiple places within a component.
 
 # what is useCallback hook?
-
+- By memoizing the function, the component can avoid unnecessary re-renders and improve its performance.
 - useCallback is a React Hook that is used to optimize the performance of functional components. 
 - useCallback is a built-in React hook that is used for performance optimization 
-- By memoizing the function, the component can avoid unnecessary re-renders and improve its performance.
 
 When a component that uses the useCallback hook re-renders, it will return the same memoized function instance unless any of its dependencies have changed. If any of the dependencies have changed, then the hook will create a new function instance and return it.
 
@@ -184,12 +184,13 @@ The useCallback hook is often used in conjunction with the useMemo hook to optim
 
 # Explain the term stateless components 
 - Stateless components are pure functions that render DOM-based on the properties provided to them.
-- A stateless function component is a typical React component that is defined as a function that does not manage any state.
+- A stateless function component is a typical React component that is defined as a 
+-  function that does not manage any state.
 
 # What is DOM?
 
-DOM stands for Document Object Model it is the structural representation of all nodes in an HTML document DOM represents the Ul of your applications.  DOM manipulation is required to dynamically change the content of a web page. 
-
+- DOM stands for Document Object Model it is the structural representation of all nodes in an HTML document DOM represents the Ul of your applications. 
+- DOM manipulation is required to dynamically change the content of a web page.
 
 # State the difference between Real DOM and Virtual DOM
 
@@ -231,7 +232,6 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 - Facebook widely uses flux architecture concept for developing client-side web applications. 
 - It is not a framework or a library. It is simply a new kind of architecture
 - that complements React and the concept of Unidirectional Data Flow.
-
 - Flux is a programming concept, where the data is uni-directional.
 - This data enters the app and flows through it in one direction until it is rendered on the screen.
 
@@ -241,7 +241,8 @@ React uses Virtual DOM, which can be thought of as a blueprint of the DOM.
 - Dispatcher − This is a central hub of the app. All the data is dispatched and sent to the stores.
 
 - Store − Store is the place where the application state and logic are held.
--  Every store is maintaining a particular state and it will update when needed.
+
+- Every store is maintaining a particular state and it will update when needed.
 
 - View − The view will receive data from the store and re-render the app.
 
@@ -263,74 +264,64 @@ of changes over time and debug or inspect the application.
 - It is a function which returns an action object. The action-type and the action data are
 always stored in the action object. Actions can send data between the Store and the
 software application. All information retrieved by the Store is produced by the actions.
-
 - An action creator is a function that literally creates an action object. 
 - In Redux, action creators simply return an action object and pass the argument value if necessary.
-
-
-# Explain React Router / why do you need Routing in React?
-- Because we make SPA's (single page Application) in React
-- React Router is a routing library which allows you to add new screen flows to your application, 
-  and it also keeps URL in sync with what’s being shown on the page.
-
 
 # What is dispatcher?
 
 A dispatcher is a central hub of app where you will receive actions and broadcast payload to registered callbacks.
 
+# Explain React Router / why do you need Routing in React?
+
+- Because we make SPA's (single page Application) in React
+- React Router is a routing library which allows you to add new screen flows to your application, 
+  and it also keeps URL in sync with what’s being shown on the page.
+
+
+
 # What is meant by callback function? What is its purpose?
 
-- A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+- A callback function is a function passed into another function as an argument, 
+- which is then invoked inside the outer function to complete some kind of routine or action.
 
 - A callback function should be called when setState has finished, and the component is retendered. As the setState is asynchronous, which is why it takes in a second callback function.
 
 
 #  what is REACT LIFECYCLE METHOD
+ Every component in React goes through a lifecycle of events. 
+ - I like to think of them as going through a cycle of birth, growth, and death.
 
 - Each React component has a lifecycle that you can monitor and manipulate during its three main phases.	
 The three phases are Mounting, Updating, and Unmounting.
 
-- 1] Mounting - birth
-- 2] Updating - growth
-- 3] Unmounting - death
+# phase
+
+   1]  Mounting – Birth of your component
+   2]  Update –  Growth of your component
+   3]  Unmount – Death of your component
+
+# Method
+    mounting = constructor->render->componentDidMount
+    update = render->componentDidUpdate
+    unmounting = componentWillUnmount
 
 # Mounting/birth
+-  1] The mounting phase is when a new component is created and inserted into the DOM 
 - Mounting means putting elements into the DOM. 
 - as birth of new component
-- React has four built-in methods that get called, in this order, when mounting a  component:
+- React has built-in methods that get called, in this order, when mounting a  component:
 - constructor => render()  => componentDidMount()
 
-
 # Updating/middle
+-  2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when the state is updated. This phase can occur multiple times, which is kind of the point of React.
 - A component is updated whenever there is a change
 - that get called, in this order, when a component is updated
 - render() =>  componentDidUpdate()
 
-
 # Unmounting/end 
-- The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React     likes to call it.
+-  3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
 - React has only one built-in method that gets called when a component is unmounted:
 - componentWillUnmount()
-
-
- # life cycles => 
- - Every component in React goes through a lifecycle of events. 
- - I like to think of them as going through a cycle of birth, growth, and death.
-
-    Mounting – Birth of your component
-    Update –  Growth of your component
-    Unmount – Death of your component
- 
- -  1] The mounting phase is when a new component is created and inserted into the DOM 
- -  2] The updating phase is when the component updates or re-renders. This reaction is triggered when the props are updated or when   the state is updated. This phase can occur multiple times, which is kind of the point of React.
- -  3] The last phase within a component's lifecycle is the unmounting phase, when the component is removed from the DOM.
-
-# lifecycle method
-mounting = constructor->render->componentDidMount
-update = render->componentDidUpdate
-unmounting = componentWillUnmount
-
-
 
 # context API
 - React Context is a way to manage state globally. 
@@ -338,11 +329,12 @@ unmounting = componentWillUnmount
 - to share state between deeply  nested components more easily 
 - It's is better way aviod a prop drilling in react.js 
 
+
 - ex:  import React, { useContext } from "react";
   import CountContext from "./context";
 
 const Child = () => {
-  const context = useContext(CountContext);
+  const context = useContext(CountContext); 
   const { countHandler } = context;
 
   return (
@@ -354,19 +346,12 @@ const Child = () => {
 export default Child;
 
 
-
-
 # Prop drilling
 Prop drilling is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.
 - passing props in nested components
 
 # Async ops =>
-<<<<<<< HEAD
-- Async-Ops is a library for performing   a   asynchronous service calls in Redux applications.
- - Async-Ops is made for use with Redux-Sagas.
-=======
 - Async-Ops is a library for performing  a  asynchronous service calls in Redux applications. - Async-Ops is made for use with Redux-Sagas.
->>>>>>> 95d56e20614f0600ef279b5e6ccfd046ea8a91a8
 - async is that function always returns a promise.
 
 

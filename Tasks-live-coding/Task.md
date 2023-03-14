@@ -6,6 +6,7 @@
 # create a array of object ? and map data in react? [completed]
 # write a code to genrate a random number[completed]
 # backend crud [complete]
+# Create form and post data in localstorage and reset
 
 
 const randomNumber = Math.floor(Math.random() * 10) + 1;

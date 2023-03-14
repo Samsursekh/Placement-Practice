@@ -1,8 +1,9 @@
 
 My_SQL : https://drive.google.com/drive/folders/1HGPaKw0zSoiL5Cw36c9zZmmgIRbJ_eaz?usp=share_link
 
-Font- awesomenone ==> 
+Font- awesomenone ==> https://fontawesome.com/icons
 
+<script src="https://kit.fontawesome.com/f31ea9c808.js" crossorigin="anonymous"></script>
 ===================REACT===================
 React-redux : https://drive.google.com/drive/folders/1_v9yseCjQtz8Csslc7t4xJTV5hrGEfnS?usp=sharing 
 

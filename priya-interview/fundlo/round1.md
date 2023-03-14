@@ -39,8 +39,9 @@ interview time => 3-3-2023 - 7 to 8pm
 # what is promise and async await 
 
 # what is setTimeout function
+
 for(let p=0; p<3; p++){
-    setTimeout(function log(p){
+    setTimeout(function log(){
         console.log(p)
     },1000)
 }  
