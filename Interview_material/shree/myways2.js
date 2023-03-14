@@ -91,3 +91,32 @@ export default function App() {
 }
 
 // Interview 2 | Frontend Developer | shridhar | MyGurukul-" 5ec974"
+
+// quiick sort
+function quicksort(arr, left = 0, right = arr.length - 1) {
+  if (left < right) {
+    const pivotIndex = partition(arr, left, right);
+    quicksort(arr, left, pivotIndex - 1);
+    quicksort(arr, pivotIndex + 1, right);
+  }
+  return arr;
+}
+
+function partition(arr, left, right) {
+  const pivot = arr[right];
+  let i = left;
+  for (let j = left; j < right; j++) {
+    if (arr[j] < pivot) {
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+      i++;
+    }
+  }
+  [arr[i], arr[right]] = [arr[right], arr[i]];
+  return i;
+}
+
+let arr =[9, 7, 5, 11, 12, 2, 14, 3, 10, 6,6]
+
+console.log(quicksort(arr, left = 0, right = arr.length - 1))
+
+
