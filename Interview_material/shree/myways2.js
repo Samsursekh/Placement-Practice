@@ -5,6 +5,7 @@ let answercode =
 
 let filters = ["Bags", "Watches", "Sports", "Sunglasses"];
 import "./styles.css";
+
 import react, { useEffect, useState } from "react";
 const items = [
   { name: "Black leather handbag", category: "Bags" },
