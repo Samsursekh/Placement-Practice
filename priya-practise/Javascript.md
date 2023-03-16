@@ -240,6 +240,8 @@ should refrain from using it whenever possible by using the above methods.
 - whenerver you creating a function whaterveer you put over here is known as parameters (label and identifiers)
 - whenerver you calling a function whaterveer you put over here is known as arguments
 
+# function => 
+A JavaScript function is a block of code designed to perform a particular task.
 
 # function statement / function decleration 
 
