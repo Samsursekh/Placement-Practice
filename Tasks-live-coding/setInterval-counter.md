@@ -1,4 +1,4 @@
-# create a stopwatch with start pause and reset button ?
+# create a stopwatch with start pause and reset button ? using setInterval and clearinterval
 
 import {useState, useRef} from "react"
 
@@ -28,3 +28,4 @@ return(
   </div>
   )
 }
+
