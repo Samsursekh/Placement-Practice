@@ -17,7 +17,7 @@ record the presentation.
 - For example, 2 + 3; // 5. Here + is an operator that performs addition, and 2 and 3 are operands.
 
 There are different types of JavaScript operators:
-Type Operators.
+# Type Operators.
 Arithmetic Operators.
 Assignment Operators.
 Comparison Operators.
@@ -147,6 +147,43 @@ Bitwise operators perform operations on binary representations of numbers.
 > >
 > > >     Zero-fill right shift
 
+
+
+# loops in javascript =>
+
+# Loops
+
+- Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+JavaScript supports different kinds of loops:
+
+1] for - loops through a block of code a number of times
+      for (Initialization; Condition; Iterator){
+      statements;
+      }
+
+2] while - loops through a block of code while a specified condition is true
+    Initialization
+      while(Condition){
+    statements;
+    Iterator
+    }
+
+3] do/while - also loops through a block of code while a specified condition is true
+
+      do{
+      statements;
+      iterator;
+      }
+      while(Condition);
+
+- statement gets executed one time if the condition is false
+
+4] for/in - loops through the properties of an object
+
+5] for/of - loops through the values of an iterable object
+
+
 # JAVASCRIPT CONDITION STATMENT
 
 # 1] If()
@@ -204,39 +241,7 @@ console.log("girls are allowed")
 console.log("Not allowed")
 }
 
-# loops in javascript =>
 
-# Loops
-
-- Loops are handy, if you want to run the same code over and over again, each time with a different value.
-
-JavaScript supports different kinds of loops:
-
-1] for - loops through a block of code a number of times
-for (Initialization; Condition; Iterator){
-statements;
-}
-
-2] for/in - loops through the properties of an object
-
-3] for/of - loops through the values of an iterable object
-
-4] while - loops through a block of code while a specified condition is true
-
-if(Condition){
-statements;
-}
-while(Condition){
-statements;
-}
-
-5] do/while - also loops through a block of code while a specified condition is true
-
-do{
-statements;
-}
-while(Condition);
-statement gets executed one time if the condition is false
 
 # Function =>
 
@@ -253,6 +258,7 @@ console.log("a is called")
 }
 
 a()
+
 
 # function expression
 
@@ -344,12 +350,84 @@ function a() => {
   2] By creating instance of Object directly (using new keyword)
   3] By using an object constructor (using new keyword)
 
+  # 7 different ways in javascript => 
+
+# 1] object literals 
+
+let obj1 ={}
+let obj2={
+    name:'Priya'
+};
+
+let obj3 = {
+    name:"Reddy",
+    show:function(){
+        return this.name;
+    }
+}
+console.log(obj1);  //{}
+console.log(obj2)  // {name:"priya"}
+console.log(obj3.show()) // Reddy
+
+# 2] object create
+
+var car ={
+  model:"bmw",
+  color:"red",
+
+};
+
+var electricCar = Object.create(car)
+console.log(electricCar.model) //-------------bmw
+
+# 3] object constrctor 
+// let obj = new Object()
+// console.log(obj)
+
+
+# 4] function constructor 
+
+// function employee(n, a){
+//     this.name = n;
+//     this.age=a;
+// }
+// let obj1 = new employee("priya", 23)
+// console.log(obj1)     //-----------------employee { name: 'priya', age: 23 }
+
+# 5] Function constructor and protoptype 
+
+function Person(){}
+    Person.prototype.name="priya";
+    
+    let obj1 = new Person();
+    console.log(obj1.name)   //priya
+
+# 6] Es6 class  syntax
+class Person{
+  constructor(name){
+    this.name=name
+  }
+}
+let obj1 = new Person("priya");
+console.log(obj1.name)  //priya
+
+
+
 # Array and its methods =>
 
 - An array is a collection of items stored at contiguous memory locations.
 - array is a linear data str
 - The idea is to store multiple items of the same type together.
 - each data element can be randomly accessed by using its index number.
+
+- Ex =>
+// const arr = [1,2,3,5]
+// // arr.push(4)
+// // arr.unshift(4)
+// // arr.pop()
+// // arr.shift()
+// console.log(arr)
+
 
 [1, 2, 3].push(4); // [1, 2, 3, 4]
 [1, 2, 3].pop(); // [1, 2]
@@ -389,66 +467,6 @@ getData()
 # DOM manipulation
 
 - DOM - Document Object Model - is a programming interface for HTML documents. It is used to represent the page so that programs can change the document structure, style, and content
+ - DOM is created by the browser when a web page is loaded.
   - DOM is created by the browser when a web page is loaded. In graphical form, it's like a tree of elements also called nodes, which are used to represent every single element on the page. All the DOM of our webpage sits inside the document object. Programmatically, this model allows us to read or even change the content of our page via JavaScript.
-
-# 7 different ways in javascript => 
-
-# 1] object literals 
-
-let obj1 ={}
-let obj2={
-    name:'Priya'
-};
-
-let obj3 = {
-    name:"Reddy",
-    show:function(){
-        return this.name;
-    }
-}
-console.log(obj1);  //{}
-console.log(obj2)  // {name:"priya"}
-console.log(obj3.show()) // Reddy
-
-# 2] object create
-
-var car ={
-  model:"bmw",
-  color:"red",
-
-};
-
-var electricCar = Object.create(car)
-console.log(electricCar.model) //-------------bmw
-
-# 3] object constrctor 
-// let obj = new Object()
-// console.log(obj)
-
-
-# 4] function constructor 
-
-// function employee(name, age){
-//     this.name = name;
-//     this.age=age;
-// }
-// let obj1 = new employee("priya", 23)
-// console.log(obj1)     //-----------------employee { name: 'priya', age: 23 }
-
-# 5] Function constructor and protoptype 
-
-function Person(){}
-    Person.prototype.name="priya";
-    
-    let obj1 = new Person();
-    console.log(obj1.name)   //priya
-
-# 6] Es6 class  syntax
-class Person{
-  constructor(name){
-    this.name=name
-  }
-}
-let obj1 = new Person("priya");
-console.log(obj1.name)  //priya
 
