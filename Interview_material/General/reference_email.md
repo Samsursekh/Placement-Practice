@@ -13,11 +13,11 @@ Shridhar Hakke
 
 # reference notes ==>
 
-Hi, I am Priyanka Phulmante I want to get a referral for a current opening for a Full Stack Developer role in your company. The role suits my experience and skills. please accept my invitation so that I can share my resume for the same. I have a solid understanding of the MERN stack required for these positions, and I am confident that my skills and knowledge make me a strong candidate for the role. I am excited about the opportunity to apply my skills and experience to real-world problems, and I believe that your company would be an excellent place for me to do so. Thank you!
+Hi, I am Shridhar Hakke I want to get a referral for a current opening for a Full Stack/Front Developer role in your company. The role suits my experience and skills. please accept my invitation so that I can share my resume for the same. Thank you!
 
 # cover letter ==>
 
-# subject -> Application for FrontEnd Developer - priyanka phulmante
+# subject -> Application for FrontEnd Developer - Shridhar Hakke 
 
 Dear HR,
 I hope this email finds you well. I came across your contact information on LinkedIn and wanted to reach out to inquire about the open position for a FrontEnd developer.
@@ -29,4 +29,4 @@ I'm attaching my resume, please find my resume for your review. I hope that you 
 Thank you for your time and consideration. I look forward to hearing back from you.
 
 Best regards,
-priyanka phulmante
+Shridhar Hakke
