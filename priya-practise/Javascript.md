@@ -1,99 +1,103 @@
 
-# difference between call apply bind?
-# what is rest operator?
-The rest operator, represented by three dots ( ... ), 
-allows a function to receive an indefinite number of arguments as an array. 
-It enables the function to capture all remaining parameters that are not assigned to any argument. This operator can be used in functions to accept an arbitrary number of arguments, which makes it a useful tool for creating more flexible and dynamic functions. It is also known as the spread syntax when used to spread the contents of an array or object into another array or object.
-
-# what is spread operator?
-A spread operator is a syntax in JavaScript that allows an iterable (such as an array or string) to be expanded in places where multiple arguments or elements are expected. It is denoted by the ellipsis (three dots) followed by the name of the iterable. The spread operator can be used in function calls, array literals, and object literals to make it easier to work with collections of data. It creates a copy of the original data and avoids modifying the original object or array.
-
-# what is the  difference betwwen []===[]
-The expression []===[] compares two empty arrays in JavaScript using the strict equality operator (===). The result of this comparison is true because both arrays have the same data type (array) and they are both empty.
-
-In other words, []===[] checks if two separate arrays are exactly the same array, with the same data type, length, and elements in the same order. It does not check for equality of the contents of the arrays.
 
 
-# Explain async await  
-Async/await is a language feature in JavaScript that allows for the creation of asynchronous code that is more readable and easier to work with. It allows functions to be paused and resumed, while waiting for asynchronous code to complete.
 
-The "async" keyword is used to declare a function that will be asynchronous. Inside the async function, "await" is used to pause the function execution until an asynchronous operation (such as an API call or a database query) completes.
+# Class:
 
-For example, consider the following code:
+1. A class is a template for creating objects in program.
+2. A class is a logical entity
+3. A class does not allocate memory space when it is created.
+4. You can declare class only once.
+5. Class generates objects
 
-async function getUser(id) {
-const response = await fetch(https://api.example.com/user/${id});
-const data = await response.json();
-return data;
+# Creating Objects in JavaScript
+
+- There are 3 ways to create objects.
+  1] By object literal
+  2] By creating instance of Object directly (using new keyword)
+  3] By using an object constructor (using new keyword)
+
+  # 7 different ways in javascript => 
+
+# 1] object literals 
+
+let obj1 ={}
+let obj2={
+    name:'Priya'
+};
+
+let obj3 = {
+    name:"Reddy",
+    show:function(){
+        return this.name;
+    }
 }
+console.log(obj1);  //{}
+console.log(obj2)  // {name:"priya"}
+console.log(obj3.show()) // Reddy
 
-In this code, the "getUser" function is declared as async, which allows the use of the "await" keyword inside the function. The function makes an API call to fetch user data, and then waits for the response to be returned before parsing the response data as JSON and returning it.
+# 2] object create
 
-Overall, async/await simplifies asynchronous programming by allowing developers to write code that reads more like synchronous code, without the need for complex callback functions or promises.
+var car ={
+  model:"bmw",
+  color:"red",
 
-# what is promises ans its status?
+};
 
-Promises are a programming concept that enables asynchronous operations in JavaScript. They are objects that represent the eventual completion or failure of an asynchronous operation and provide a way to handle its result. The status of a promise can be one of three states: pending, fulfilled, or rejected. When a promise is pending, it means that the asynchronous operation is still in progress. Once it is fulfilled, it means that the operation has completed successfully, and the promise returns a value. On the other hand, when a promise is rejected, it means that the operation failed, and the promise returns an error.
+var electricCar = Object.create(car)
+console.log(electricCar.model) //-------------bmw
 
-Promises are widely used in modern JavaScript development and have become a crucial part of asynchronous programming. They were introduced in ECMAScript 6 and have been adopted by major JavaScript libraries and frameworks.
-
-# explain oops concept?
- Object-Oriented Programming (OOP) is a programming paradigm that emphasizes on the use of objects, rather than just functions and procedures. It provides a modular and structured approach to code development, making it easier to build, maintain and modify complex applications. In JavaScript, OOP is implemented using the following concepts:
-
-Classes: Classes are used to create objects that share similar characteristics. A class is like a blueprint that defines the properties and methods of an object. In JavaScript, classes are defined using the class keyword.
-
-Objects: Objects are instances of classes. They have their own unique identity and can be created using the new keyword followed by the class name.
-
-Encapsulation: Encapsulation is a concept that ensures that the internal workings of an object are hidden from the outside world. This is achieved by defining private and public methods and properties.
-
-Inheritance: Inheritance allows objects to inherit properties and methods from other objects. This helps in code reuse and allows for the creation of more complex objects.
-
-Polymorphism: Polymorphism allows objects to take on multiple forms or behaviors. This means that the same method can be used to perform different actions depending on the context in which it is used.
-
-Abstraction is way of hiding complexity. JavaScript Data Abstraction feature is used for hiding internal details and showing the essential features of the object only.
-
-Overall, OOP in JavaScript helps to create code that is easier to manage, understand and maintain, by providing a structured and modular approach to development.
+# 3] object constrctor 
+// let obj = new Object()
+// console.log(obj)
 
 
-#  what are javascript considered as single threaded language
+# 4] function constructor 
 
-- JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
-- The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
+// function employee(n, a){
+//     this.name = n;
+//     this.age=a;
+// }
+// let obj1 = new employee("priya", 23)
+// console.log(obj1)     //-----------------employee { name: 'priya', age: 23 }
+
+# 5] Function constructor and protoptype 
+
+function Person(){}
+    Person.prototype.name="priya";
+    
+    let obj1 = new Person();
+    console.log(obj1.name)   //priya
+
+# 6] Es6 class  syntax
+class Person{
+  constructor(name){
+    this.name=name
+  }
+}
+let obj1 = new Person("priya");
+console.log(obj1.name)  //priya
 
 
-# Q 1 – What is “use strict” and why?  
-1.  The "use strict" directive was new in ECMAScript version 5. 
-2.  It is not a statement, but a literal expression, ignored by earlier versions of JavaScript. 
-3.  The purpose of "use strict" is to indicate that the code should be executed in "strict mode". 
-4.  With strict mode, you cannot, for example, use undeclared variables. 
-5.  All modern browsers support "use strict" except Internet Explorer 9 and lower 
 
 
-# Why Strict Mode? 
- Strict mode makes it easier to write "secure" JavaScript. 
- Strict mode changes previously accepted "bad syntax" into real errors. 
- As an example, in normal JavaScript, mistyping a variable name creates a new global 
-variable. In strict mode, this will throw an error, making it impossible to accidentally create 
-a global variable. 
- In normal JavaScript, a developer will not receive any error feedback assigning values to 
-non-writable properties. 
- In strict mode, any assignment to a non-writable property, a getter-only property, a non-
-existing property, a non-existing variable, or a non-existing object, will throw an error. 
- 
- 
-# Q 2 – What is “this” keyword? 
- 
- In JavaScript, the this keyword refers to an object. 
- Which object depends on how this is being invoked (used or called). 
- 
-The this keyword refers to different objects depending on how it is used: 
- 
-1. In an object method, this refers to the object.  
-2. Alone, this refers to the global object.  
-3. In a function, this refers to the global object.  
-4. In a function, in strict mode, this is undefined.  
-5. In an event, this refers to the element that received the event. Methods like call(), apply(), 
-and bind() can refer this to any object. 
+# Async Await =>
+
+- async and await make promises easier to write
+- async makes a function return a Promise
+- await makes a function wait for a Promise
+- he await keyword can only be used inside an async function.
+
+- The await keyword makes the function pause the execution and wait for a resolved promise before it continues:
+
+async function getData(){
+let res = await fetch('https/:pppp/tttttt.com")
+let data = await res.json()
+console.log(data)
+}
+getData()
+
+
  
  
 # Q 3 – What are different datatypes in JavaScript? 
@@ -545,4 +549,98 @@ print(0,5)
   function inside function like nested callback. which blocks our code of execution inside call stack . that is called as callback hell
 
 
+# difference between call apply bind?
+# what is rest operator?
+The rest operator, represented by three dots ( ... ), 
+allows a function to receive an indefinite number of arguments as an array. 
+It enables the function to capture all remaining parameters that are not assigned to any argument. This operator can be used in functions to accept an arbitrary number of arguments, which makes it a useful tool for creating more flexible and dynamic functions. It is also known as the spread syntax when used to spread the contents of an array or object into another array or object.
 
+# what is spread operator?
+A spread operator is a syntax in JavaScript that allows an iterable (such as an array or string) to be expanded in places where multiple arguments or elements are expected. It is denoted by the ellipsis (three dots) followed by the name of the iterable. The spread operator can be used in function calls, array literals, and object literals to make it easier to work with collections of data. It creates a copy of the original data and avoids modifying the original object or array.
+
+# what is the  difference betwwen []===[]
+The expression []===[] compares two empty arrays in JavaScript using the strict equality operator (===). The result of this comparison is true because both arrays have the same data type (array) and they are both empty.
+
+In other words, []===[] checks if two separate arrays are exactly the same array, with the same data type, length, and elements in the same order. It does not check for equality of the contents of the arrays.
+
+
+# Explain async await  
+Async/await is a language feature in JavaScript that allows for the creation of asynchronous code that is more readable and easier to work with. It allows functions to be paused and resumed, while waiting for asynchronous code to complete.
+
+The "async" keyword is used to declare a function that will be asynchronous. Inside the async function, "await" is used to pause the function execution until an asynchronous operation (such as an API call or a database query) completes.
+
+For example, consider the following code:
+
+async function getUser(id) {
+const response = await fetch(https://api.example.com/user/${id});
+const data = await response.json();
+return data;
+}
+
+In this code, the "getUser" function is declared as async, which allows the use of the "await" keyword inside the function. The function makes an API call to fetch user data, and then waits for the response to be returned before parsing the response data as JSON and returning it.
+
+Overall, async/await simplifies asynchronous programming by allowing developers to write code that reads more like synchronous code, without the need for complex callback functions or promises.
+
+# what is promises ans its status?
+
+Promises are a programming concept that enables asynchronous operations in JavaScript. They are objects that represent the eventual completion or failure of an asynchronous operation and provide a way to handle its result. The status of a promise can be one of three states: pending, fulfilled, or rejected. When a promise is pending, it means that the asynchronous operation is still in progress. Once it is fulfilled, it means that the operation has completed successfully, and the promise returns a value. On the other hand, when a promise is rejected, it means that the operation failed, and the promise returns an error.
+
+Promises are widely used in modern JavaScript development and have become a crucial part of asynchronous programming. They were introduced in ECMAScript 6 and have been adopted by major JavaScript libraries and frameworks.
+
+# explain oops concept?
+ Object-Oriented Programming (OOP) is a programming paradigm that emphasizes on the use of objects, rather than just functions and procedures. It provides a modular and structured approach to code development, making it easier to build, maintain and modify complex applications. In JavaScript, OOP is implemented using the following concepts:
+
+Classes: Classes are used to create objects that share similar characteristics. A class is like a blueprint that defines the properties and methods of an object. In JavaScript, classes are defined using the class keyword.
+
+Objects: Objects are instances of classes. They have their own unique identity and can be created using the new keyword followed by the class name.
+
+Encapsulation: Encapsulation is a concept that ensures that the internal workings of an object are hidden from the outside world. This is achieved by defining private and public methods and properties.
+
+Inheritance: Inheritance allows objects to inherit properties and methods from other objects. This helps in code reuse and allows for the creation of more complex objects.
+
+Polymorphism: Polymorphism allows objects to take on multiple forms or behaviors. This means that the same method can be used to perform different actions depending on the context in which it is used.
+
+Abstraction is way of hiding complexity. JavaScript Data Abstraction feature is used for hiding internal details and showing the essential features of the object only.
+
+Overall, OOP in JavaScript helps to create code that is easier to manage, understand and maintain, by providing a structured and modular approach to development.
+
+
+#  what are javascript considered as single threaded language
+
+- JavaScript is a single-threaded language, which means it has only one call stack that is used to execute the program.
+- The call stack is the same as the stack data structure. Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO (first in last out).
+
+
+# Q 1 – What is “use strict” and why?  
+1.  The "use strict" directive was new in ECMAScript version 5. 
+2.  It is not a statement, but a literal expression, ignored by earlier versions of JavaScript. 
+3.  The purpose of "use strict" is to indicate that the code should be executed in "strict mode". 
+4.  With strict mode, you cannot, for example, use undeclared variables. 
+5.  All modern browsers support "use strict" except Internet Explorer 9 and lower 
+
+
+# Why Strict Mode? 
+ Strict mode makes it easier to write "secure" JavaScript. 
+ Strict mode changes previously accepted "bad syntax" into real errors. 
+ As an example, in normal JavaScript, mistyping a variable name creates a new global 
+variable. In strict mode, this will throw an error, making it impossible to accidentally create 
+a global variable. 
+ In normal JavaScript, a developer will not receive any error feedback assigning values to 
+non-writable properties. 
+ In strict mode, any assignment to a non-writable property, a getter-only property, a non-
+existing property, a non-existing variable, or a non-existing object, will throw an error. 
+ 
+ 
+# Q 2 – What is “this” keyword? 
+ 
+ In JavaScript, the this keyword refers to an object. 
+ Which object depends on how this is being invoked (used or called). 
+ 
+The this keyword refers to different objects depending on how it is used: 
+ 
+1. In an object method, this refers to the object.  
+2. Alone, this refers to the global object.  
+3. In a function, this refers to the global object.  
+4. In a function, in strict mode, this is undefined.  
+5. In an event, this refers to the element that received the event. Methods like call(), apply(), 
+and bind() can refer this to any object. 
