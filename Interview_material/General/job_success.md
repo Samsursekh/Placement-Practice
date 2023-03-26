@@ -11,5 +11,6 @@ And thank you so much to my all friends who always help with the whole journey o
 How can I forget to brother Ajeet Kumar Srivastav who always motivated me, thank you so much bhaiya you are always my inspiration.
 also thank you to Mohammad Irfan Sir for giving me this opportunity and for showing your trust on me.
 Thank you Masai 🙂🙂
+
 #job #newposition #frontenddeveloper #fullstackdeveloper
 

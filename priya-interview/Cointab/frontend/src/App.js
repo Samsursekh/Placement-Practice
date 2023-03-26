@@ -1,11 +1,12 @@
 import './App.css';
-import User from './Components/User';
+import MultiFilter from './Components/MultiFilter';
+// import User from './Components/User';
 
 function App() {
   return (
     <div className="App">
-   <User />
-      
+   {/* <User /> */}
+      <MultiFilter />
     </div>
   );
 }
