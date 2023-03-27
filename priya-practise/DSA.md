@@ -250,6 +250,37 @@ function swap(arr,p, q){
 }
 
 
+
+// approach 2
+function bubbleSort(a, n) {
+	let sorted = true; // we are assuming that array is sorted
+	for (let i = 0; i < n - 1; i++) {
+		if (a[i] > a[i + 1]) {
+			let t = a[i];
+			a[i] = a[i + 1];
+			a[i + 1] = t;
+			sorted = false; // now array is not sorted
+		}
+		// if there are no swaps then we can say that array is sorted.
+	}
+	if (sorted == false) {
+		// recursively calling until it was sorted.
+		bubbleSort(a, n);
+	}
+}
+
+let ar = [5, 4, 8, 2, 9, 7, 3];
+let n = ar.length;
+bubbleSort(ar, n);
+
+console.log("Sorted array : " + ar.join(" "));
+
+<!-- Output
+Sorted array : 2 3 4 5 7 8 9 
+Time Complexity : O (N2 )
+
+Auxiliary space : O(1) -->
+
 # 7] selection sort =>
 
 - Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
