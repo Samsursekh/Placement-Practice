@@ -4,7 +4,7 @@ My_SQL : https://drive.google.com/drive/folders/1HGPaKw0zSoiL5Cw36c9zZmmgIRbJ_ea
 Font- awesomenone ==> https://fontawesome.com/icons
 
 <script src="https://kit.fontawesome.com/f31ea9c808.js" crossorigin="anonymous"></script>
-===================REACT===================
+=================== REACT ===================
 React-redux : https://drive.google.com/drive/folders/1_v9yseCjQtz8Csslc7t4xJTV5hrGEfnS?usp=sharing 
 
 React theory  :  https://www.javatpoint.com/react-flux-vs-mvc#:~:text=MVC%20stands%20for%20Model%20View,in%20the%20Smalltalk%20programming%20language.
