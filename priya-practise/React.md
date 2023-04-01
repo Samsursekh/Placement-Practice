@@ -284,7 +284,7 @@ A dispatcher is a central hub of app where you will receive actions and broadcas
 - A callback function is a function passed into another function as an argument, 
 - which is then invoked inside the outer function to complete some kind of routine or action.
 
-- A callback function should be called when setState has finished, and the component is retendered. As the setState is asynchronous, which is why it takes in a second callback function.
+- A callback function should be called when setState has finished, and the component is rerendered. As the setState is asynchronous, which is why it takes in a second callback function.
 
 
 #  what is REACT LIFECYCLE METHOD
@@ -355,5 +355,40 @@ Prop drilling is a situation where data is passed from one component through mul
 - async is that function always returns a promise.
 
 
+# Advantage-club  // qns
+  basic js, callbacks,promises,component life cycle, objects, Dom virtual and realdom ,shallow and deep copy
+# check passed value is present in the nested obj or not
+// advantage club
+var obj = {
+    data: {
+        info: {
+            key1: {
+                nestedKey: {
+                    subkey: {
+                        value: 44,
+                        desc: 'foo2'
+                    }
+                }
+            }
+        }
+    }
+}
+
+let ans = contains(obj, 4); // true
+let ans2 = contains(obj, "foo"); // false
 
 
+console.log(ans)
+console.log(ans2)
+function contains(obj,val){
+   for(let k in obj){
+            if(obj[k]==val){// console.log("true")
+       
+               return "true"
+            }
+            else if(typeof obj[k] === "object"){
+                return contains(obj[k],val)
+                }  
+        }
+        return false
+}
