@@ -116,7 +116,7 @@ capable of excecuting js code outside the browser
      - Also provides users with real-timme abilities to work with application
 
      # what is middleware in Node.js ?
-     - A middleware is a simple function that has ability to handle incomingh req and responses.
+     - A middleware is a simple function that has ability to handle incoming req and responses.
       - used primarly for
        - execution of code( of any type)
        - updation of req and res objects
